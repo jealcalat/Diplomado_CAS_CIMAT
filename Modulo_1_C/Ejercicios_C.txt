@@ -1,0 +1,3149 @@
+Código Fuente de Ejemplo para el Tema 1: Instalación de un Entorno de Desarrollo en C
+
+**************************************************************************************************************************
+
+Este código fuente de ejemplo muestra cómo instalar y configurar un entorno de desarrollo en C en diferentes sistemas operativos.
+/*
+ * Tema 1: Instalación de un Entorno de Desarrollo en C
+ *
+ * Este programa de ejemplo muestra cómo instalar y configurar un entorno de desarrollo en C
+ * en diferentes sistemas operativos (Windows, macOS, Linux).
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>
+
+// Función para instalar y configurar GCC en Windows
+void instalar_gcc_windows() {
+    printf("Instalando GCC en Windows...\n");
+    printf("1. Descargar MinGW desde https://sourceforge.net/projects/mingw/\n");
+    printf("2. Instalar MinGW siguiendo las instrucciones del instalador.\n");
+    printf("3. Configurar las variables de entorno:\n");
+    printf("   - Agregar la ruta de MinGW (por ejemplo, C:\\MinGW\\bin) a la variable de entorno PATH.\n");
+    printf("4. Verificar la instalación:\n");
+    printf("   - Abrir la línea de comandos y ejecutar 'gcc --version'.\n");
+    printf("GCC instalado y configurado correctamente en Windows.\n");
+}
+
+// Función para instalar y configurar GCC en macOS
+void instalar_gcc_macos() {
+    printf("Instalando GCC en macOS...\n");
+    printf("1. Verificar si GCC ya está instalado:\n");
+    printf("   - Abrir la terminal y ejecutar 'gcc --version'.\n");
+    printf("2. Si no está instalado, instalar Xcode Command Line Tools:\n");
+    printf("   - Ejecutar 'xcode-select --install' en la terminal.\n");
+    printf("3. Verificar la instalación:\n");
+    printf("   - Ejecutar 'gcc --version' en la terminal.\n");
+    printf("GCC instalado y configurado correctamente en macOS.\n");
+}
+
+// Función para instalar y configurar GCC en Linux
+void instalar_gcc_linux() {
+    printf("Instalando GCC en Linux...\n");
+    printf("1. Verificar si GCC ya está instalado:\n");
+    printf("   - Abrir la terminal y ejecutar 'gcc --version'.\n");
+    printf("2. Si no está instalado, instalar GCC usando el gestor de paquetes:\n");
+    printf("   - Ejecutar 'sudo apt-get install gcc' en Ubuntu.\n");
+    printf("3. Verificar la instalación:\n");
+    printf("   - Ejecutar 'gcc --version' en la terminal.\n");
+    printf("GCC instalado y configurado correctamente en Linux.\n");
+}
+
+// Función para configurar un IDE en Windows
+void configurar_ide_windows() {
+    printf("Configurando un IDE en Windows...\n");
+    printf("1. Descargar e instalar Code::Blocks desde http://www.codeblocks.org/downloads\n");
+    printf("2. Configurar Code::Blocks para usar GCC:\n");
+    printf("   - En Code::Blocks, ir a Settings > Compiler y seleccionar 'GNU GCC Compiler'.\n");
+    printf("3. Verificar la configuración:\n");
+    printf("   - Crear un nuevo proyecto y compilar un programa simple.\n");
+    printf("IDE configurado correctamente en Windows.\n");
+}
+
+// Función para configurar un IDE en macOS
+void configurar_ide_macos() {
+    printf("Configurando un IDE en macOS...\n");
+    printf("1. Descargar e instalar Xcode desde la App Store.\n");
+    printf("2. Configurar Xcode para usar GCC:\n");
+    printf("   - En Xcode, crear un nuevo proyecto y seleccionar 'Command Line Tool'.\n");
+    printf("3. Verificar la configuración:\n");
+    printf("   - Compilar y ejecutar un programa simple.\n");
+    printf("IDE configurado correctamente en macOS.\n");
+}
+
+// Función para configurar un IDE en Linux
+void configurar_ide_linux() {
+    printf("Configurando un IDE en Linux...\n");
+    printf("1. Descargar e instalar Visual Studio Code desde https://code.visualstudio.com/\n");
+    printf("2. Instalar la extensión de C/C++ en VS Code:\n");
+    printf("   - En VS Code, ir a Extensions y buscar 'C/C++'.\n");
+    printf("3. Configurar VS Code para usar GCC:\n");
+    printf("   - Crear un archivo de configuración 'tasks.json' para compilar con GCC.\n");
+    printf("4. Verificar la configuración:\n");
+    printf("   - Compilar y ejecutar un programa simple.\n");
+    printf("IDE configurado correctamente en Linux.\n");
+}
+
+int main() {
+    printf("Instalación y configuración de un entorno de desarrollo en C\n");
+
+    // Instalación de GCC en diferentes sistemas operativos
+    instalar_gcc_windows();
+    instalar_gcc_macos();
+    instalar_gcc_linux();
+
+    // Configuración de un IDE en diferentes sistemas operativos
+    configurar_ide_windows();
+    configurar_ide_macos();
+    configurar_ide_linux();
+
+    printf("Proceso de instalación y configuración completado.\n");
+    return 0;
+}
+
+Explicación del Código
+1.	Funciones de Instalación de GCC:
+	o	instalar_gcc_windows(): Muestra los pasos para instalar y configurar GCC en Windows usando MinGW.
+	o	instalar_gcc_macos(): Muestra los pasos para instalar y configurar GCC en macOS usando Xcode Command Line Tools.
+	o	instalar_gcc_linux(): Muestra los pasos para instalar y configurar GCC en Linux usando el gestor de paquetes.
+2.	Funciones de Configuración de IDE:
+	o	configurar_ide_windows(): Muestra los pasos para configurar Code::Blocks como IDE en Windows.
+	o	configurar_ide_macos(): Muestra los pasos para configurar Xcode como IDE en macOS.
+	o	configurar_ide_linux(): Muestra los pasos para configurar Visual Studio Code como IDE en Linux.
+3.	Función main():
+	o	Llama a las funciones de instalación de GCC y configuración de IDE para cada sistema operativo.
+	o	Muestra mensajes indicando que el proceso de instalación y configuración ha sido completado.
+
+Este código fuente de ejemplo proporciona una guía paso a paso para instalar y configurar un entorno de desarrollo en C en diferentes sistemas operativos.
+
+
+Código Fuente de Ejemplo para el Tema 2: Introducción a C
+
+Este código fuente de ejemplo muestra una introducción al lenguaje de programación C, incluyendo su historia, características principales, ventajas y aplicaciones.
+/*
+ * Tema 2: Introducción a C
+ *
+ * Este programa de ejemplo muestra una introducción al lenguaje de programación C,
+ * incluyendo su historia, características principales, ventajas y aplicaciones.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>
+
+// Función para mostrar la historia de C
+void mostrar_historia_c() {
+    printf("Historia de C:\n");
+    printf("C fue creado por Dennis Ritchie en los laboratorios Bell en la década de 1970.\n");
+    printf("Inicialmente, C fue desarrollado como un lenguaje para escribir el sistema operativo UNIX.\n");
+    printf("A lo largo de los años, C ha evolucionado y se ha convertido en uno de los lenguajes de programación más populares.\n");
+    printf("\n");
+}
+
+// Función para mostrar las características principales de C
+void mostrar_caracteristicas_c() {
+    printf("Características principales de C:\n");
+    printf("- Eficiencia: C es conocido por su alto rendimiento y eficiencia.\n");
+    printf("- Portabilidad: Los programas en C pueden ser compilados y ejecutados en diferentes plataformas.\n");
+    printf("- Flexibilidad: C permite un control directo sobre el hardware y la memoria.\n");
+    printf("- Simplicidad: La sintaxis de C es simple y fácil de aprender.\n");
+    printf("\n");
+}
+
+// Función para mostrar las ventajas de C
+void mostrar_ventajas_c() {
+    printf("Ventajas de C:\n");
+    printf("- Eficiencia y rendimiento: C permite escribir código de bajo nivel que se ejecuta rápidamente.\n");
+    printf("- Control directo sobre el hardware: C permite acceder a recursos de hardware de manera directa.\n");
+    printf("- Amplia comunidad y soporte: Existe una gran cantidad de recursos y bibliotecas disponibles.\n");
+    printf("\n");
+}
+
+// Función para mostrar las aplicaciones de C
+void mostrar_aplicaciones_c() {
+    printf("Aplicaciones de C:\n");
+    printf("- Desarrollo de sistemas operativos: C es el lenguaje principal para escribir sistemas operativos como UNIX y Linux.\n");
+    printf("- Desarrollo de controladores de dispositivos: C se utiliza para escribir controladores de hardware.\n");
+    printf("- Aplicaciones de alto rendimiento: C es ideal para aplicaciones que requieren un alto rendimiento, como juegos y aplicaciones científicas.\n");
+    printf("\n");
+}
+
+int main() {
+    printf("Introducción a C\n");
+
+    // Mostrar la historia de C
+    mostrar_historia_c();
+
+    // Mostrar las características principales de C
+    mostrar_caracteristicas_c();
+
+    // Mostrar las ventajas de C
+    mostrar_ventajas_c();
+
+    // Mostrar las aplicaciones de C
+    mostrar_aplicaciones_c();
+
+    printf("Proceso de introducción a C completado.\n");
+    return 0;
+}
+
+Explicación del Código
+1.	Funciones de Información sobre C:
+	o	mostrar_historia_c(): Muestra la historia del lenguaje de programación C, incluyendo su creación por Dennis Ritchie y su evolución.
+	o	mostrar_caracteristicas_c(): Muestra las características principales de C, como su eficiencia, portabilidad, flexibilidad y simplicidad.
+	o	mostrar_ventajas_c(): Muestra las ventajas de usar C, como su eficiencia, control directo sobre el hardware y su amplia comunidad.
+	o	mostrar_aplicaciones_c(): Muestra las aplicaciones de C, incluyendo el desarrollo de sistemas operativos, controladores de dispositivos y aplicaciones de alto rendimiento.
+
+2.	Función main():
+	o	Llama a las funciones de información sobre C para mostrar la historia, características, ventajas y aplicaciones del lenguaje.
+	o	Muestra un mensaje indicando que el proceso de introducción a C ha sido completado.
+
+Este código fuente de ejemplo proporciona una introducción al lenguaje de programación C, explicando su historia, características principales, ventajas y aplicaciones.
+
+Código Fuente de Ejemplo para el Tema 3: Estructura básica de un programa en C
+
+Este código fuente de ejemplo muestra la estructura básica de un programa en C, incluyendo la sintaxis básica, comentarios y el uso de la consola para compilar y ejecutar programas. 
+/*
+ * Tema 3: Estructura básica de un programa en C
+ *
+ * Este programa de ejemplo muestra la estructura básica de un programa en C,
+ * incluyendo la sintaxis básica, comentarios y el uso de la consola para compilar y ejecutar programas.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+
+// Función principal del programa
+int main() {
+    // Comentario de una línea: Esta línea es un comentario y no se ejecuta
+
+    /*
+     * Comentario de múltiples líneas:
+     * Este es un comentario de varias líneas que explica el propósito del programa.
+     */
+
+    // Imprimir un mensaje en la consola
+    printf("Hola, mundo!\n");
+
+    // Retornar 0 para indicar que el programa terminó correctamente
+    return 0;
+}
+
+/*
+ * Compilación y ejecución del programa:
+ *
+ * 1. Guardar el código fuente en un archivo con extensión .c, por ejemplo, hola_mundo.c
+ * 2. Compilar el programa usando un compilador de C, como GCC:
+ *    - En la consola, ejecutar: gcc -o hola_mundo hola_mundo.c
+ * 3. Ejecutar el programa compilado:
+ *    - En la consola, ejecutar: ./hola_mundo
+ * 4. Ver el resultado en la consola:
+ *    - Debería mostrar el mensaje "Hola, mundo!"
+ */
+
+Explicación del Código
+1.	Inclusión de la Biblioteca Estándar:
+	o	#include <stdio.h>: Incluye la biblioteca estándar de entrada y salida, que contiene funciones como printf para imprimir en la consola.
+2.	Función Principal main():
+	o	int main(): Define la función principal del programa, que es el punto de entrada del programa.
+	o	return 0;: Retorna 0 para indicar que el programa terminó correctamente.
+3.	Comentarios:
+	o	// Comentario de una línea: Comentario de una sola línea que no se ejecuta.
+	o	/* Comentario de múltiples líneas */: Comentario de varias líneas que no se ejecuta.
+4.	Uso de printf:
+	o	printf("Hola, mundo!\n");: Imprime el mensaje "Hola, mundo!" en la consola, seguido de un salto de línea (\n).
+5.	Compilación y Ejecución:
+	o	El código fuente se guarda en un archivo con extensión .c, por ejemplo, hola_mundo.c.
+	o	Se compila usando un compilador de C, como GCC, ejecutando gcc -o hola_mundo hola_mundo.c.
+	o	Se ejecuta el programa compilado con ./hola_mundo.
+	o	El resultado se muestra en la consola: "Hola, mundo!".
+
+Este código fuente de ejemplo proporciona una introducción a la estructura básica de un programa en C, incluyendo la sintaxis básica, comentarios y el proceso de compilación y ejecución desde la consola.
+
+
+Código Fuente de Ejemplo para el Tema 4: Variables y tipos de datos
+Este código fuente de ejemplo muestra cómo declarar y asignar variables, los tipos de datos básicos en C, y la conversión de tipos de datos. 
+/*
+ * Tema 4: Variables y tipos de datos
+ *
+ * Este programa de ejemplo muestra cómo declarar y asignar variables,
+ * los tipos de datos básicos en C, y la conversión de tipos de datos.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+
+int main() {
+    // Declaración y asignación de variables
+    int edad = 25;  // Variable de tipo entero
+    float altura = 1.75;  // Variable de tipo flotante
+    char inicial = 'J';  // Variable de tipo carácter
+    char nombre[] = "Juan";  // Variable de tipo cadena de caracteres
+
+    // Imprimir los valores de las variables
+    printf("Edad: %d\n", edad);
+    printf("Altura: %.2f\n", altura); // %.2f imprimir con dos decimales
+    printf("Inicial: %c\n", inicial); // %c para imprimir solo un caracter
+    printf("Nombre: %s\n", nombre);   // %s para imprimir cadenas
+
+    // Tipos de datos básicos
+    int entero = 10;  // Entero
+    float flotante = 3.14;  // Flotante
+    double doble = 2.71828;  // Doble precisión
+    char caracter = 'A';  // Carácter
+    _Bool booleano = 1;  // Booleano (0 para falso, 1 para verdadero)
+
+    // Imprimir los valores de los tipos de datos básicos
+    printf("Entero: %d\n", entero);
+    printf("Flotante: %.2f\n", flotante);
+    printf("Doble: %.5f\n", doble);
+    printf("Caracter: %c\n", caracter);
+    printf("Booleano: %d\n", booleano);
+
+    // Conversión de tipos de datos (casting)
+    int a = 10;
+    float b = 3.5;
+    float resultado = a + b;  // Conversión implícita de int a float
+    printf("Resultado de a + b: %.2f\n", resultado);
+
+    int c = (int)b;  // Conversión explícita de float a int
+    printf("Valor de c después de casting: %d\n", c);
+
+    return 0;
+}
+Explicación del Código
+1.	Declaración y Asignación de Variables:
+	o	int edad = 25;: Declara una variable de tipo entero (int) y le asigna el valor 25.
+	o	float altura = 1.75;: Declara una variable de tipo flotante (float) y le asigna el valor 1.75.
+	o	char inicial = 'J';: Declara una variable de tipo carácter (char) y le asigna el valor 'J'.
+	o	char nombre[] = "Juan";: Declara una variable de tipo cadena de caracteres (char[]) y le asigna el valor "Juan".
+2.	Impresión de Valores de Variables:
+	o	printf("Edad: %d\n", edad);: Imprime el valor de la variable edad usando el especificador de formato %d para enteros.
+	o	printf("Altura: %.2f\n", altura);: Imprime el valor de la variable altura usando el especificador de formato %.2f para flotantes con dos decimales.
+	o	printf("Inicial: %c\n", inicial);: Imprime el valor de la variable inicial usando el especificador de formato %c para caracteres.
+	o	printf("Nombre: %s\n", nombre);: Imprime el valor de la variable nombre usando el especificador de formato %s para cadenas de caracteres.
+3.	Tipos de Datos Básicos:
+	o	int entero = 10;: Declara una variable de tipo entero (int) y le asigna el valor 10.
+	o	float flotante = 3.14;: Declara una variable de tipo flotante (float) y le asigna el valor 3.14.
+	o	double doble = 2.71828;: Declara una variable de tipo doble precisión (double) y le asigna el valor 2.71828.
+	o	char caracter = 'A';: Declara una variable de tipo carácter (char) y le asigna el valor 'A'.
+	o	_Bool booleano = 1;: Declara una variable de tipo booleano (_Bool) y le asigna el valor 1 (verdadero).
+4.	Conversión de Tipos de Datos (Casting):
+	o	float resultado = a + b;: Realiza una conversión implícita de int a float al sumar a y b.
+	o	int c = (int)b;: Realiza una conversión explícita de float a int usando el operador de casting (int).
+
+Este código fuente de ejemplo proporciona una introducción a la declaración y asignación de variables, los tipos de datos básicos en C, y la conversión de tipos de datos.
+ 
+Código Fuente de Ejemplo para el Tema 5: Operadores y expresiones
+Este código fuente de ejemplo muestra el uso de operadores y expresiones en C, incluyendo operadores aritméticos, de comparación, lógicos y la precedencia de operadores. 
+/*
+ * Tema 5: Operadores y expresiones
+ *
+ * Este programa de ejemplo muestra el uso de operadores y expresiones en C,
+ * incluyendo operadores aritméticos, de comparación, lógicos y la precedencia de operadores.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+
+int main() {
+    // Operadores aritméticos
+    int a = 10;
+    int b = 3;
+
+    int suma = a + b;  // Suma
+    int resta = a - b;  // Resta
+    int multiplicacion = a * b;  // Multiplicación
+    int division = a / b;  // División
+    int modulo = a % b;  // Módulo (resto de la división)
+
+    printf("Operadores aritméticos:\n");
+    printf("Suma: %d\n", suma);
+    printf("Resta: %d\n", resta);
+    printf("Multiplicación: %d\n", multiplicacion);
+    printf("División: %d\n", division);
+    printf("Módulo: %d\n", modulo);
+    printf("\n");
+
+    // Operadores de comparación
+    int x = 5;
+    int y = 8;
+
+    int igual = (x == y);  // Igual a
+    int diferente = (x != y);  // Diferente de
+    int mayor_que = (x > y);  // Mayor que
+    int menor_que = (x < y);  // Menor que
+    int mayor_o_igual = (x >= y);  // Mayor o igual que
+    int menor_o_igual = (x <= y);  // Menor o igual que
+
+    printf("Operadores de comparación:\n");
+    printf("Igual: %d\n", igual);
+    printf("Diferente: %d\n", diferente);
+    printf("Mayor que: %d\n", mayor_que);
+    printf("Menor que: %d\n", menor_que);
+    printf("Mayor o igual que: %d\n", mayor_o_igual);
+    printf("Menor o igual que: %d\n", menor_o_igual);
+    printf("\n");
+
+    // Operadores lógicos
+    int p = 1;  // Verdadero
+    int q = 0;  // Falso
+
+    int and_logico = (p && q);  // AND lógico
+    int or_logico = (p || q);  // OR lógico
+    int not_logico = !p;  // NOT lógico
+
+    printf("Operadores lógicos:\n");
+    printf("AND lógico: %d\n", and_logico);
+    printf("OR lógico: %d\n", or_logico);
+    printf("NOT lógico: %d\n", not_logico);
+    printf("\n");
+
+    // Precedencia de operadores
+    int resultado = 5 + 3 * 2;  // Multiplicación tiene mayor precedencia que suma
+    printf("Precedencia de operadores:\n");
+    printf("5 + 3 * 2 = %d\n", resultado);
+
+    resultado = (5 + 3) * 2;  // Paréntesis tiene mayor precedencia
+    printf("(5 + 3) * 2 = %d\n", resultado);
+
+    return 0;
+}
+
+Explicación del Código
+1.	Operadores Aritméticos:
+	o	int suma = a + b;: Realiza la suma de a y b.
+	o	int resta = a - b;: Realiza la resta de a y b.
+	o	int multiplicacion = a * b;: Realiza la multiplicación de a y b.
+	o	int division = a / b;: Realiza la división de a y b.
+	o	int modulo = a % b;: Calcula el módulo (resto de la división) de a y b.
+2.	Operadores de Comparación:
+	o	int igual = (x == y);: Compara si x es igual a y.
+	o	int diferente = (x != y);: Compara si x es diferente de y.
+	o	int mayor_que = (x > y);: Compara si x es mayor que y.
+	o	int menor_que = (x < y);: Compara si x es menor que y.
+	o	int mayor_o_igual = (x >= y);: Compara si x es mayor o igual que y.
+	o	int menor_o_igual = (x <= y);: Compara si x es menor o igual que y.
+3.	Operadores Lógicos:
+	o	int and_logico = (p && q);: Realiza una operación AND lógico entre p y q.
+	o	int or_logico = (p || q);: Realiza una operación OR lógico entre p y q.
+	o	int not_logico = !p;: Realiza una operación NOT lógico en p.
+4.	Precedencia de Operadores:
+	o	int resultado = 5 + 3 * 2;: La multiplicación tiene mayor precedencia que la suma, por lo que se evalúa primero 3 * 2.
+	o	resultado = (5 + 3) * 2;: Los paréntesis tienen mayor precedencia, por lo que se evalúa primero 5 + 3.
+Este código fuente de ejemplo proporciona una introducción a los operadores y expresiones en C, incluyendo operadores aritméticos, de comparación, lógicos y la precedencia de operadores.
+ 
+Código Fuente de Ejemplo para el Tema 6: Estructuras de control: condicionales
+Este código fuente de ejemplo muestra el uso de estructuras de control condicionales en C, incluyendo las sentencias if, else if, y else. 
+/*
+ * Tema 6: Estructuras de control: condicionales
+ *
+ * Este programa de ejemplo muestra el uso de estructuras de control condicionales en C,
+ * incluyendo las sentencias `if`, `else if`, y `else`.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+
+int main() {
+    // Ejemplo de sentencia `if`
+    int edad = 18;
+
+    if (edad >= 18) {
+        printf("Eres mayor de edad.\n");
+    }
+
+    // Ejemplo de sentencia `if-else`
+    int nota = 75;
+
+    if (nota >= 70) {
+        printf("Aprobado.\n");
+    } else {
+        printf("Reprobado.\n");
+    }
+
+    // Ejemplo de sentencia `if-else if-else`
+    int dia_semana = 3;
+
+    if (dia_semana == 1) {
+        printf("Lunes.\n");
+    } else if (dia_semana == 2) {
+        printf("Martes.\n");
+    } else if (dia_semana == 3) {
+        printf("Miércoles.\n");
+    } else if (dia_semana == 4) {
+        printf("Jueves.\n");
+    } else if (dia_semana == 5) {
+        printf("Viernes.\n");
+    } else if (dia_semana == 6) {
+        printf("Sábado.\n");
+    } else if (dia_semana == 7) {
+        printf("Domingo.\n");
+    } else {
+        printf("Día inválido.\n");
+    }
+
+    // Ejemplo de uso de operadores de comparación y lógicos en condicionales
+    int hora = 14;
+    int es_fin_de_semana = 0;  // 0 para falso, 1 para verdadero
+
+    if (hora >= 9 && hora <= 17 && !es_fin_de_semana) {
+        printf("Estás en horario laboral.\n");
+    } else {
+        printf("No estás en horario laboral.\n");
+    }
+
+    return 0;
+}
+Explicación del Código
+1.	Sentencia if:
+	o	if (edad >= 18) { ... }: Evalúa si la variable edad es mayor o igual a 18. Si la condición es verdadera, imprime "Eres mayor de edad".
+2.	Sentencia if-else:
+	o	if (nota >= 70) { ... } else { ... }: Evalúa si la variable nota es mayor o igual a 70. Si la condición es verdadera, imprime "Aprobado". Si la condición es falsa, imprime "Reprobado".
+3.	Sentencia if-else if-else:
+	o	if (dia_semana == 1) { ... } else if (dia_semana == 2) { ... } else if (dia_semana == 3) { ... } ... else { ... }: Evalúa la variable dia_semana y ejecuta el bloque de código correspondiente al valor de dia_semana. Si dia_semana no coincide con ningún valor válido, imprime "Día inválido".
+4.	Uso de Operadores de Comparación y Lógicos en Condicionales:
+	o	if (hora >= 9 && hora <= 17 && !es_fin_de_semana) { ... } else { ... }: Evalúa si la variable hora está entre 9 y 17, y si es_fin_de_semana es falso. Si ambas condiciones son verdaderas, imprime "Estás en horario laboral". Si alguna condición es falsa, imprime "No estás en horario laboral".
+
+Este código fuente de ejemplo proporciona una introducción a las estructuras de control condicionales en C, incluyendo las sentencias if, else if, y else, así como el uso de operadores de comparación y lógicos en condicionales.
+ 
+Código Fuente de Ejemplo para el Tema 7: Estructuras de control: bucles
+Este código fuente de ejemplo muestra el uso de estructuras de control de bucles en C, incluyendo los bucles for, while, y do-while, así como el uso de las sentencias break y continue. 
+/*
+ * Tema 7: Estructuras de control: bucles
+ *
+ * Este programa de ejemplo muestra el uso de estructuras de control de bucles en C,
+ * incluyendo los bucles `for`, `while`, y `do-while`, así como el uso de las sentencias `break` y `continue`.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+
+int main() {
+    // Bucle `for`
+    printf("Bucle `for`:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Iteración %d\n", i);
+    }
+    printf("\n");
+
+    // Bucle `while`
+    printf("Bucle `while`:\n");
+    int j = 0;
+    while (j < 5) {
+        printf("Iteración %d\n", j);
+        j++;
+    }
+    printf("\n");
+
+    // Bucle `do-while`
+    printf("Bucle `do-while`:\n");
+    int k = 0;
+    do {
+        printf("Iteración %d\n", k);
+        k++;
+    } while (k < 5);
+    printf("\n");
+
+    // Uso de `break` en un bucle `for`
+    printf("Uso de `break` en un bucle `for`:\n");
+    for (int i = 0; i < 10; i++) {
+        if (i == 5) {
+            break;  // Termina el bucle cuando i es igual a 5
+        }
+        printf("Iteración %d\n", i);
+    }
+    printf("\n");
+
+    // Uso de `continue` en un bucle `while`
+    printf("Uso de `continue` en un bucle `while`:\n");
+    int l = 0;
+    while (l < 10) {
+        l++;
+        if (l % 2 == 0) {
+            continue;  // Salta a la siguiente iteración si l es par
+        }
+        printf("Iteración %d\n", l);
+    }
+    printf("\n");
+
+    return 0;
+}
+Explicación del Código
+1.	Bucle for:
+	o	for (int i = 0; i < 5; i++) { ... }: Inicializa la variable i en 0, evalúa si i es menor que 5, y luego incrementa i en 1 después de cada iteración. Imprime "Iteración i" en cada iteración.
+2.	Bucle while:
+	o	while (j < 5) { ... }: Evalúa si j es menor que 5. Si la condición es verdadera, ejecuta el bloque de código y luego incrementa j en 1. Imprime "Iteración j" en cada iteración.
+3.	Bucle do-while:
+	o	do { ... } while (k < 5);: Ejecuta el bloque de código al menos una vez, luego evalúa si k es menor que 5. Si la condición es verdadera, ejecuta el bloque de código nuevamente y luego incrementa k en 1. Imprime "Iteración k" en cada iteración.
+4.	Uso de break en un bucle for:
+	o	for (int i = 0; i < 10; i++) { ... if (i == 5) { break; } ... }: Evalúa si i es igual a 5. Si la condición es verdadera, termina el bucle usando break. Imprime "Iteración i" hasta que i sea igual a 5.
+5.	Uso de continue en un bucle while:
+	o	while (l < 10) { ... if (l % 2 == 0) { continue; } ... }: Evalúa si l es par. Si la condición es verdadera, salta a la siguiente iteración usando continue. Imprime "Iteración l" solo si l es impar.
+Este código fuente de ejemplo proporciona una introducción a las estructuras de control de bucles en C, incluyendo los bucles for, while, y do-while, así como el uso de las sentencias break y continue.
+
+Código Fuente de Ejemplo para el Tema 8: Funciones
+Este código fuente de ejemplo muestra el uso de funciones en C, incluyendo la definición y llamada de funciones, el uso de parámetros y argumentos, el retorno de valores, y el uso de funciones con parámetros por referencia. 
+/*
+ * Tema 8: Funciones
+ *
+ * Este programa de ejemplo muestra el uso de funciones en C,
+ * incluyendo la definición y llamada de funciones, el uso de parámetros y argumentos,
+ * el retorno de valores, y el uso de funciones con parámetros por referencia.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+
+// Definición de una función simple
+void saludar() {
+    printf("Hola, mundo!\n");
+}
+
+// Definición de una función con parámetros
+int suma(int a, int b) {
+    return a + b;
+}
+
+// Definición de una función con parámetros por referencia
+void incrementar(int *a) {
+    (*a)++;
+}
+
+// Definición de una función lambda (simulada con una macro)
+#define CUADRADO(x) ((x) * (x))
+
+int main() {
+    // Llamada a una función simple
+    saludar();
+
+    // Llamada a una función con parámetros
+    int resultado = suma(3, 5);
+    printf("Resultado de la suma: %d\n", resultado);
+
+    // Uso de una función con parámetros por referencia
+    int numero = 10;
+    incrementar(&numero);
+    printf("Número después de incrementar: %d\n", numero);
+
+    // Uso de una función lambda (simulada con una macro)
+    int cuadrado = CUADRADO(5);
+    printf("Cuadrado de 5: %d\n", cuadrado);
+
+    return 0;
+}
+Explicación del Código
+1.	Definición de una Función Simple:
+	o	void saludar() { ... }: Define una función llamada saludar que no recibe parámetros y no retorna ningún valor. Imprime "Hola, mundo!" en la consola.
+2.	Definición de una Función con Parámetros:
+	o	int suma(int a, int b) { ... }: Define una función llamada suma que recibe dos parámetros enteros a y b, y retorna la suma de estos dos valores.
+3.	Definición de una Función con Parámetros por Referencia:
+	o	void incrementar(int *a) { ... }: Define una función llamada incrementar que recibe un puntero a un entero a, y incrementa el valor apuntado por a en 1.
+4.	Definición de una Función Lambda (Simulada con una Macro):
+	o	#define CUADRADO(x) ((x) * (x)): Define una macro llamada CUADRADO que recibe un parámetro x y retorna el cuadrado de x.
+5.	Llamada a Funciones:
+	o	saludar();: Llama a la función saludar para imprimir "Hola, mundo!".
+	o	int resultado = suma(3, 5);: Llama a la función suma con los argumentos 3 y 5, y almacena el resultado en la variable resultado.
+	o	incrementar(&numero);: Llama a la función incrementar pasando la dirección de la variable numero como argumento.
+	o	int cuadrado = CUADRADO(5);: Llama a la macro CUADRADO con el argumento 5, y almacena el resultado en la variable cuadrado.
+Este código fuente de ejemplo proporciona una introducción al uso de funciones en C, incluyendo la definición y llamada de funciones, el uso de parámetros y argumentos, el retorno de valores, y el uso de funciones con parámetros por referencia. También muestra cómo simular funciones lambda usando macros.
+ 
+Código Fuente de Ejemplo para el Tema 9: Arreglos (Arrays)
+Este código fuente de ejemplo muestra el uso de arreglos (arrays) en C, incluyendo la creación y manipulación de arreglos, el acceso a elementos de un arreglo, y el uso de arreglos multidimensionales. 
+/*
+ * Tema 9: Arreglos (Arrays)
+ *
+ * Este programa de ejemplo muestra el uso de arreglos (arrays) en C,
+ * incluyendo la creación y manipulación de arreglos, el acceso a elementos de un arreglo,
+ * y el uso de arreglos multidimensionales.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+
+int main() {
+    // Creación y manipulación de un arreglo unidimensional
+    int numeros[5];  // Declaración de un arreglo de 5 enteros
+
+    // Asignación de valores a los elementos del arreglo
+    for (int i = 0; i < 5; i++) {
+        numeros[i] = i + 1;
+    }
+
+    // Acceso y modificación de elementos del arreglo
+    numeros[2] = 10;  // Modifica el tercer elemento del arreglo
+
+    // Imprimir los elementos del arreglo
+    printf("Arreglo unidimensional:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Elemento %d: %d\n", i, numeros[i]);
+    }
+    printf("\n");
+
+    // Creación y manipulación de un arreglo bidimensional
+    int matriz[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };  // Declaración de un arreglo bidimensional de 3x3 enteros
+
+    // Acceso y modificación de elementos del arreglo bidimensional
+    matriz[1][1] = 0;  // Modifica el elemento en la segunda fila y segunda columna
+
+    // Imprimir los elementos del arreglo bidimensional
+    printf("Arreglo bidimensional:\n");
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("%d ", matriz[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+
+    // Uso de arreglos como parámetros de funciones
+    void imprimir_arreglo(int arr[], int tamano) {
+        printf("Arreglo pasado como parámetro:\n");
+        for (int i = 0; i < tamano; i++) {
+            printf("Elemento %d: %d\n", i, arr[i]);
+        }
+    }
+
+    // Llamada a la función para imprimir el arreglo unidimensional
+    imprimir_arreglo(numeros, 5);
+
+    return 0;
+}
+Explicación del Código
+1.	Creación y Manipulación de un Arreglo Unidimensional:
+	o	int numeros[5];: Declara un arreglo unidimensional de 5 enteros.
+	o	for (int i = 0; i < 5; i++) { ... }: Asigna valores a los elementos del arreglo.
+	o	numeros[2] = 10;: Modifica el tercer elemento del arreglo.
+	o	printf("Elemento %d: %d\n", i, numeros[i]);: Imprime los elementos del arreglo.
+2.	Creación y Manipulación de un Arreglo Bidimensional:
+	o	int matriz[3][3] = { ... };: Declara un arreglo bidimensional de 3x3 enteros y lo inicializa.
+	o	matriz[1][1] = 0;: Modifica el elemento en la segunda fila y segunda columna.
+	o	printf("%d ", matriz[i][j]);: Imprime los elementos del arreglo bidimensional.
+3.	Uso de Arreglos como Parámetros de Funciones:
+	o	void imprimir_arreglo(int arr[], int tamano) { ... }: Define una función que recibe un arreglo y su tamaño como parámetros, e imprime los elementos del arreglo.
+	o	imprimir_arreglo(numeros, 5);: Llama a la función imprimir_arreglo para imprimir el arreglo unidimensional.
+Este código fuente de ejemplo proporciona una introducción al uso de arreglos en C, incluyendo la creación y manipulación de arreglos unidimensionales y bidimensionales, el acceso a elementos de un arreglo, y el uso de arreglos como parámetros de funciones.
+ 
+Código Fuente de Ejemplo para el Tema 10: Punteros
+Este código fuente de ejemplo muestra el uso de punteros en C, incluyendo la declaración y uso de punteros, operaciones con punteros, punteros y arreglos, y punteros a funciones. 
+/*
+ * Tema 10: Punteros
+ *
+ * Este programa de ejemplo muestra el uso de punteros en C,
+ * incluyendo la declaración y uso de punteros, operaciones con punteros,
+ * punteros y arreglos, y punteros a funciones.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+
+// Función para demostrar el uso de punteros
+void ejemplo_punteros() {
+    int numero = 10;  // Variable entera
+    int *ptr;  // Puntero a un entero
+
+    ptr = &numero;  // Asigna la dirección de `numero` a `ptr`
+
+    printf("Valor de numero: %d\n", numero);
+    printf("Dirección de numero: %p\n", (void *)&numero);
+    printf("Valor de ptr: %p\n", (void *)ptr);
+    printf("Valor apuntado por ptr: %d\n", *ptr);
+    printf("\n");
+}
+
+// Función para demostrar operaciones con punteros
+void operaciones_punteros() {
+    int arr[5] = {1, 2, 3, 4, 5};  // Arreglo de enteros
+    int *ptr = arr;  // Puntero al primer elemento del arreglo
+
+    printf("Arreglo usando punteros:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Elemento %d: %d\n", i, *(ptr + i));
+    }
+    printf("\n");
+}
+
+// Función para demostrar punteros y arreglos
+void punteros_arreglos() {
+    int arr[5] = {1, 2, 3, 4, 5};  // Arreglo de enteros
+    int *ptr = arr;  // Puntero al primer elemento del arreglo
+
+    printf("Arreglo usando punteros:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Elemento %d: %d\n", i, *(ptr + i));
+    }
+    printf("\n");
+}
+
+// Función para demostrar punteros a funciones
+void funcion_ejemplo() {
+    printf("Función llamada a través de un puntero.\n");
+}
+
+int main() {
+    // Ejemplo de uso de punteros
+    ejemplo_punteros();
+
+    // Ejemplo de operaciones con punteros
+    operaciones_punteros();
+
+    // Ejemplo de punteros y arreglos
+    punteros_arreglos();
+
+    // Ejemplo de punteros a funciones
+    void (*ptr_funcion)() = funcion_ejemplo;  // Puntero a una función
+    ptr_funcion();  // Llamada a la función a través del puntero
+
+    return 0;
+}
+Explicación del Código
+1.	Ejemplo de Uso de Punteros:
+	o	int numero = 10;: Declara una variable entera numero y le asigna el valor 10.
+	o	int *ptr;: Declara un puntero a un entero ptr.
+	o	ptr = &numero;: Asigna la dirección de numero al puntero ptr.
+	o	printf("Valor de numero: %d\n", numero);: Imprime el valor de numero.
+	o	printf("Dirección de numero: %p\n", (void *)&numero);: Imprime la dirección de numero.
+	o	printf("Valor de ptr: %p\n", (void *)ptr);: Imprime el valor del puntero ptr (la dirección de numero).
+	o	printf("Valor apuntado por ptr: %d\n", *ptr);: Imprime el valor apuntado por ptr (el valor de numero).
+2.	Ejemplo de Operaciones con Punteros:
+	o	int arr[5] = {1, 2, 3, 4, 5};: Declara un arreglo de enteros arr.
+	o	int *ptr = arr;: Declara un puntero ptr y lo inicializa con la dirección del primer elemento del arreglo arr.
+	o	printf("Elemento %d: %d\n", i, *(ptr + i));: Imprime los elementos del arreglo usando aritmética de punteros.
+3.	Ejemplo de Punteros y Arreglos:
+	o	int arr[5] = {1, 2, 3, 4, 5};: Declara un arreglo de enteros arr.
+	o	int *ptr = arr;: Declara un puntero ptr y lo inicializa con la dirección del primer elemento del arreglo arr.
+	o	printf("Elemento %d: %d\n", i, *(ptr + i));: Imprime los elementos del arreglo usando aritmética de punteros.
+4.	Ejemplo de Punteros a Funciones:
+	o	void funcion_ejemplo() { ... }: Define una función funcion_ejemplo que imprime un mensaje.
+	o	void (*ptr_funcion)() = funcion_ejemplo;: Declara un puntero a una función ptr_funcion y lo inicializa con la dirección de funcion_ejemplo.
+	o	ptr_funcion();: Llama a la función funcion_ejemplo a través del puntero ptr_funcion.
+Este código fuente de ejemplo proporciona una introducción al uso de punteros en C, incluyendo la declaración y uso de punteros, operaciones con punteros, punteros y arreglos, y punteros a funciones.
+ 
+Código Fuente de Ejemplo para el Tema 11: Cadenas de texto (Strings)
+Este código fuente de ejemplo muestra el uso de cadenas de texto (strings) en C, incluyendo la manipulación de cadenas, funciones comunes de cadenas, y formateo de cadenas. 
+/*
+ * Tema 11: Cadenas de texto (Strings)
+ *
+ * Este programa de ejemplo muestra el uso de cadenas de texto (strings) en C,
+ * incluyendo la manipulación de cadenas, funciones comunes de cadenas, y formateo de cadenas.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+#include <string.h>  // Incluir la biblioteca estándar de manipulación de cadenas
+
+int main() {
+    // Declaración y manipulación de cadenas
+    char cadena1[] = "Hola";
+    char cadena2[] = "Mundo";
+    char cadena3[50];
+
+    // Copiar una cadena
+    strcpy(cadena3, cadena1);
+    printf("Cadena copiada: %s\n", cadena3);
+
+    // Concatenar cadenas
+    strcat(cadena3, " ");
+    strcat(cadena3, cadena2);
+    printf("Cadena concatenada: %s\n", cadena3);
+
+    // Obtener la longitud de una cadena
+    int longitud = strlen(cadena3);
+    printf("Longitud de la cadena: %d\n", longitud);
+
+    // Comparar cadenas
+    int comparacion = strcmp(cadena1, cadena2);
+    if (comparacion == 0) {
+        printf("Las cadenas son iguales.\n");
+    } else if (comparacion < 0) {
+        printf("La cadena1 es menor que la cadena2.\n");
+    } else {
+        printf("La cadena1 es mayor que la cadena2.\n");
+    }
+
+    // Formateo de cadenas
+    char buffer[100];
+    int edad = 25;
+    float altura = 1.75;
+    char nombre[] = "Juan";
+
+    sprintf(buffer, "Nombre: %s, Edad: %d, Altura: %.2f", nombre, edad, altura);
+    printf("Cadena formateada: %s\n", buffer);
+
+    return 0;
+}
+Explicación del Código
+1.	Declaración y Manipulación de Cadenas:
+	o	char cadena1[] = "Hola";: Declara una cadena cadena1 y la inicializa con el valor "Hola".
+	o	char cadena2[] = "Mundo";: Declara una cadena cadena2 y la inicializa con el valor "Mundo".
+	o	char cadena3[50];: Declara una cadena cadena3 con capacidad para 50 caracteres.
+2.	Copiar una Cadena:
+	o	strcpy(cadena3, cadena1);: Copia el contenido de cadena1 a cadena3.
+	o	printf("Cadena copiada: %s\n", cadena3);: Imprime la cadena copiada.
+3.	Concatenar Cadenas:
+	o	strcat(cadena3, " ");: Concatena un espacio a cadena3.
+	o	strcat(cadena3, cadena2);: Concatena cadena2 a cadena3.
+	o	printf("Cadena concatenada: %s\n", cadena3);: Imprime la cadena concatenada.
+4.	Obtener la Longitud de una Cadena:
+	o	int longitud = strlen(cadena3);: Obtiene la longitud de cadena3.
+	o	printf("Longitud de la cadena: %d\n", longitud);: Imprime la longitud de la cadena.
+5.	Comparar Cadenas:
+	o	int comparacion = strcmp(cadena1, cadena2);: Compara cadena1 y cadena2.
+	o	if (comparacion == 0) { ... } else if (comparacion < 0) { ... } else { ... }: Evalúa el resultado de la comparación e imprime el resultado.
+6.	Formateo de Cadenas:
+	o	char buffer[100];: Declara un buffer para almacenar la cadena formateada.
+	o	int edad = 25;: Declara una variable entera edad y la inicializa con el valor 25.
+	o	float altura = 1.75;: Declara una variable flotante altura y la inicializa con el valor 1.75.
+	o	char nombre[] = "Juan";: Declara una cadena nombre y la inicializa con el valor "Juan".
+	o	sprintf(buffer, "Nombre: %s, Edad: %d, Altura: %.2f", nombre, edad, altura);: Formatea la cadena y la almacena en buffer.
+	o	printf("Cadena formateada: %s\n", buffer);: Imprime la cadena formateada.
+Este código fuente de ejemplo proporciona una introducción al uso de cadenas de texto (strings) en C, incluyendo la manipulación de cadenas, funciones comunes de cadenas, y formateo de cadenas.
+ 
+Código Fuente de Ejemplo para el Tema 12: Entrada y salida de datos
+Este código fuente de ejemplo muestra el uso de funciones de entrada y salida de datos en C, incluyendo el uso de scanf() para entrada de datos y printf() para salida de datos, así como el formateo de salida. 
+/*
+ * Tema 12: Entrada y salida de datos
+ *
+ * Este programa de ejemplo muestra el uso de funciones de entrada y salida de datos en C,
+ * incluyendo el uso de `scanf()` para entrada de datos y `printf()` para salida de datos,
+ * así como el formateo de salida.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+
+int main() {
+    // Uso de `scanf()` para entrada de datos
+    int edad;
+    float altura;
+    char nombre[50];
+
+    printf("Ingresa tu edad: ");
+    scanf("%d", &edad);  // Lee un entero desde la entrada estándar
+
+    printf("Ingresa tu altura (en metros): ");
+    scanf("%f", &altura);  // Lee un flotante desde la entrada estándar
+
+    printf("Ingresa tu nombre: ");
+    scanf("%s", nombre);  // Lee una cadena de caracteres desde la entrada estándar
+
+    // Uso de `printf()` para salida de datos
+    printf("Información ingresada:\n");
+    printf("Nombre: %s\n", nombre);
+    printf("Edad: %d\n", edad);
+    printf("Altura: %.2f metros\n", altura);
+
+    // Formateo de salida avanzado
+    int numero = 42;
+    float pi = 3.14159;
+    char inicial = 'J';
+
+    printf("Formateo de salida avanzado:\n");
+    printf("Número: %5d\n", numero);  // Ancho de campo de 5 caracteres
+    printf("Pi: %.2f\n", pi);  // 2 decimales
+    printf("Inicial: %-5c\n", inicial);  // Justificación a la izquierda
+
+    return 0;
+}
+Explicación del Código
+1.	Uso de scanf() para Entrada de Datos:
+	o	int edad;: Declara una variable entera edad.
+	o	float altura;: Declara una variable flotante altura.
+	o	char nombre[50];: Declara una cadena de caracteres nombre con capacidad para 50 caracteres.
+	o	printf("Ingresa tu edad: ");: Muestra un mensaje solicitando la edad.
+	o	scanf("%d", &edad);: Lee un entero desde la entrada estándar y lo almacena en edad.
+	o	printf("Ingresa tu altura (en metros): ");: Muestra un mensaje solicitando la altura.
+	o	scanf("%f", &altura);: Lee un flotante desde la entrada estándar y lo almacena en altura.
+	o	printf("Ingresa tu nombre: ");: Muestra un mensaje solicitando el nombre.
+	o	scanf("%s", nombre);: Lee una cadena de caracteres desde la entrada estándar y la almacena en nombre.
+2.	Uso de printf() para Salida de Datos:
+	o	printf("Información ingresada:\n");: Muestra un mensaje indicando que se mostrará la información ingresada.
+	o	printf("Nombre: %s\n", nombre);: Muestra el nombre ingresado.
+	o	printf("Edad: %d\n", edad);: Muestra la edad ingresada.
+	o	printf("Altura: %.2f metros\n", altura);: Muestra la altura ingresada con dos decimales.
+3.	Formateo de Salida Avanzado:
+	o	int numero = 42;: Declara una variable entera numero y la inicializa con el valor 42.
+	o	float pi = 3.14159;: Declara una variable flotante pi y la inicializa con el valor 3.14159.
+	o	char inicial = 'J';: Declara una variable de carácter inicial y la inicializa con el valor 'J'.
+	o	printf("Número: %5d\n", numero);: Muestra el número con un ancho de campo de 5 caracteres.
+	o	printf("Pi: %.2f\n", pi);: Muestra el valor de pi con dos decimales.
+	o	printf("Inicial: %-5c\n", inicial);: Muestra el carácter inicial justificado a la izquierda con un ancho de campo de 5 caracteres.
+Este código fuente de ejemplo proporciona una introducción al uso de funciones de entrada y salida de datos en C, incluyendo el uso de scanf() para entrada de datos y printf() para salida de datos, así como el formateo de salida.
+ 
+Código Fuente de Ejemplo para el Tema 13: Estructuras (Structs)
+Este código fuente de ejemplo muestra el uso de estructuras (structs) en C, incluyendo la definición y uso de estructuras, acceso a miembros de una estructura, y el uso de estructuras con funciones. 
+/*
+ * Tema 13: Estructuras (Structs)
+ *
+ * Este programa de ejemplo muestra el uso de estructuras (structs) en C,
+ * incluyendo la definición y uso de estructuras, acceso a miembros de una estructura,
+ * y el uso de estructuras con funciones.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+#include <string.h>  // Incluir la biblioteca estándar de manipulación de cadenas
+
+// Definición de una estructura
+struct Persona {
+    char nombre[50];
+    int edad;
+    float altura;
+};
+
+// Función para inicializar una estructura
+void inicializar_persona(struct Persona *p, char nombre[], int edad, float altura) {
+    strcpy(p->nombre, nombre);
+    p->edad = edad;
+    p->altura = altura;
+}
+
+// Función para imprimir los datos de una estructura
+void imprimir_persona(struct Persona p) {
+    printf("Nombre: %s\n", p.nombre);
+    printf("Edad: %d\n", p.edad);
+    printf("Altura: %.2f metros\n", p.altura);
+}
+
+int main() {
+    // Declaración de una variable de tipo estructura
+    struct Persona persona1;
+
+    // Inicialización de la estructura
+    inicializar_persona(&persona1, "Juan", 25, 1.75);
+
+    // Acceso a los miembros de la estructura
+    printf("Acceso a los miembros de la estructura:\n");
+    printf("Nombre: %s\n", persona1.nombre);
+    printf("Edad: %d\n", persona1.edad);
+    printf("Altura: %.2f metros\n", persona1.altura);
+    printf("\n");
+
+    // Uso de la estructura con funciones
+    printf("Uso de la estructura con funciones:\n");
+    imprimir_persona(persona1);
+
+    return 0;
+}
+Explicación del Código
+1.	Definición de una Estructura:
+	o	struct Persona { ... };: Define una estructura llamada Persona que contiene tres miembros: nombre (cadena de caracteres), edad (entero), y altura (flotante).
+2.	Función para Inicializar una Estructura:
+	o	void inicializar_persona(struct Persona *p, char nombre[], int edad, float altura) { ... }: Define una función que recibe un puntero a una estructura Persona y los valores para inicializar sus miembros.
+	o	strcpy(p->nombre, nombre);: Copia la cadena nombre al miembro nombre de la estructura.
+	o	p->edad = edad;: Asigna el valor edad al miembro edad de la estructura.
+	o	p->altura = altura;: Asigna el valor altura al miembro altura de la estructura.
+3.	Función para Imprimir los Datos de una Estructura:
+	o	void imprimir_persona(struct Persona p) { ... }: Define una función que recibe una estructura Persona y muestra sus miembros.
+	o	printf("Nombre: %s\n", p.nombre);: Imprime el miembro nombre de la estructura.
+	o	printf("Edad: %d\n", p.edad);: Imprime el miembro edad de la estructura.
+	o	printf("Altura: %.2f metros\n", p.altura);: Imprime el miembro altura de la estructura con dos decimales.
+4.	Declaración y Uso de una Variable de Tipo Estructura:
+	o	struct Persona persona1;: Declara una variable persona1 de tipo Persona.
+	o	inicializar_persona(&persona1, "Juan", 25, 1.75);: Llama a la función inicializar_persona para inicializar la estructura persona1.
+	o	printf("Acceso a los miembros de la estructura:\n");: Muestra un mensaje indicando que se accederá a los miembros de la estructura.
+	o	printf("Nombre: %s\n", persona1.nombre);: Accede y muestra el miembro nombre de la estructura.
+	o	printf("Edad: %d\n", persona1.edad);: Accede y muestra el miembro edad de la estructura.
+	o	printf("Altura: %.2f metros\n", persona1.altura);: Accede y muestra el miembro altura de la estructura con dos decimales.
+	o	printf("Uso de la estructura con funciones:\n");: Muestra un mensaje indicando que se usará la estructura con funciones.
+	o	imprimir_persona(persona1);: Llama a la función imprimir_persona para mostrar los datos de la estructura persona1.
+Este código fuente de ejemplo proporciona una introducción al uso de estructuras (structs) en C, incluyendo la definición y uso de estructuras, acceso a miembros de una estructura, y el uso de estructuras con funciones.
+ 
+Código Fuente de Ejemplo para el Tema 14: Enumeraciones (Enums)
+Este código fuente de ejemplo muestra el uso de enumeraciones (enums) en C, incluyendo la definición y uso de enumeraciones, valores predeterminados y personalizados, y acceso y uso de enumeraciones. 
+/*
+ * Tema 14: Enumeraciones (Enums)
+ *
+ * Este programa de ejemplo muestra el uso de enumeraciones (enums) en C,
+ * incluyendo la definición y uso de enumeraciones, valores predeterminados y personalizados,
+ * y acceso y uso de enumeraciones.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+
+// Definición de una enumeración
+enum DiaSemana {
+    LUNES,  // Valor predeterminado: 0
+    MARTES,  // Valor predeterminado: 1
+    MIERCOLES,  // Valor predeterminado: 2
+    JUEVES,  // Valor predeterminado: 3
+    VIERNES,  // Valor predeterminado: 4
+    SABADO,  // Valor predeterminado: 5
+    DOMINGO  // Valor predeterminado: 6
+};
+
+// Definición de una enumeración con valores personalizados
+enum Estado {
+    APAGADO = 0,  // Valor personalizado: 0
+    ENCENDIDO = 1,  // Valor personalizado: 1
+    PAUSADO = 2  // Valor personalizado: 2
+};
+
+int main() {
+    // Uso de una enumeración
+    enum DiaSemana dia = MIERCOLES;
+
+    printf("Día de la semana: %d\n", dia);
+
+    // Uso de una enumeración con valores personalizados
+    enum Estado estado = ENCENDIDO;
+
+    printf("Estado: %d\n", estado);
+
+    // Acceso y uso de enumeraciones en condicionales
+    if (dia == LUNES) {
+        printf("Es lunes.\n");
+    } else if (dia == MARTES) {
+        printf("Es martes.\n");
+    } else if (dia == MIERCOLES) {
+        printf("Es miércoles.\n");
+    } else if (dia == JUEVES) {
+        printf("Es jueves.\n");
+    } else if (dia == VIERNES) {
+        printf("Es viernes.\n");
+    } else if (dia == SABADO) {
+        printf("Es sábado.\n");
+    } else if (dia == DOMINGO) {
+        printf("Es domingo.\n");
+    } else {
+        printf("Día inválido.\n");
+    }
+
+    // Uso de enumeraciones en bucles
+    for (enum DiaSemana d = LUNES; d <= DOMINGO; d++) {
+        printf("Día: %d\n", d);
+    }
+
+    return 0;
+}
+Explicación del Código
+1.	Definición de una Enumeración:
+	o	enum DiaSemana { ... };: Define una enumeración llamada DiaSemana con valores predeterminados (LUNES = 0, MARTES = 1, ..., DOMINGO = 6).
+2.	Definición de una Enumeración con Valores Personalizados:
+	o	enum Estado { ... };: Define una enumeración llamada Estado con valores personalizados (APAGADO = 0, ENCENDIDO = 1, PAUSADO = 2).
+3.	Uso de una Enumeración:
+	o	enum DiaSemana dia = MIERCOLES;: Declara una variable dia de tipo DiaSemana y la inicializa con el valor MIERCOLES.
+	o	printf("Día de la semana: %d\n", dia);: Imprime el valor de dia.
+4.	Uso de una Enumeración con Valores Personalizados:
+	o	enum Estado estado = ENCENDIDO;: Declara una variable estado de tipo Estado y la inicializa con el valor ENCENDIDO.
+	o	printf("Estado: %d\n", estado);: Imprime el valor de estado.
+5.	Acceso y Uso de Enumeraciones en Condicionales:
+	o	if (dia == LUNES) { ... } else if (dia == MARTES) { ... } ... else { ... }: Evalúa el valor de dia y ejecuta el bloque de código correspondiente.
+6.	Uso de Enumeraciones en Bucles:
+	o	for (enum DiaSemana d = LUNES; d <= DOMINGO; d++) { ... }: Itera sobre los valores de la enumeración DiaSemana desde LUNES hasta DOMINGO.
+	o	printf("Día: %d\n", d);: Imprime el valor de d en cada iteración.
+Este código fuente de ejemplo proporciona una introducción al uso de enumeraciones (enums) en C, incluyendo la definición y uso de enumeraciones, valores predeterminados y personalizados, y acceso y uso de enumeraciones en condicionales y bucles.
+ 
+Código Fuente de Ejemplo para el Tema 15: Manejo de archivos
+Este código fuente de ejemplo muestra el manejo de archivos en C, incluyendo la apertura y cierre de archivos, la lectura y escritura de archivos, y el manejo de errores en operaciones de archivos. 
+/*
+ * Tema 15: Manejo de archivos
+ *
+ * Este programa de ejemplo muestra el manejo de archivos en C,
+ * incluyendo la apertura y cierre de archivos, la lectura y escritura de archivos,
+ * y el manejo de errores en operaciones de archivos.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+
+int main() {
+    // Apertura y cierre de archivos
+    FILE *archivo;
+    archivo = fopen("ejemplo.txt", "w");  // Abre el archivo en modo escritura
+
+    if (archivo == NULL) {
+        printf("Error al abrir el archivo.\n");
+        return 1;
+    }
+
+    fclose(archivo);  // Cierra el archivo
+
+    // Escritura de archivos
+    archivo = fopen("ejemplo.txt", "w");  // Abre el archivo en modo escritura
+
+    if (archivo == NULL) {
+        printf("Error al abrir el archivo.\n");
+        return 1;
+    }
+
+    fprintf(archivo, "Hola, mundo!\n");  // Escribe en el archivo
+    fclose(archivo);  // Cierra el archivo
+
+    // Lectura de archivos
+    archivo = fopen("ejemplo.txt", "r");  // Abre el archivo en modo lectura
+
+    if (archivo == NULL) {
+        printf("Error al abrir el archivo.\n");
+        return 1;
+    }
+
+    char linea[100];
+    while (fgets(linea, sizeof(linea), archivo) != NULL) {
+        printf("%s", linea);  // Lee y muestra cada línea del archivo
+    }
+
+    fclose(archivo);  // Cierra el archivo
+
+    // Manejo de errores en operaciones de archivos
+    archivo = fopen("archivo_inexistente.txt", "r");  // Intenta abrir un archivo inexistente
+
+    if (archivo == NULL) {
+        perror("Error al abrir el archivo");  // Muestra un mensaje de error del sistema
+        return 1;
+    }
+
+    fclose(archivo);  // Cierra el archivo
+
+    return 0;
+}
+Explicación del Código
+1.	Apertura y Cierre de Archivos:
+	o	FILE *archivo;: Declara un puntero a un archivo.
+	o	archivo = fopen("ejemplo.txt", "w");: Abre el archivo ejemplo.txt en modo escritura ("w").
+	o	if (archivo == NULL) { ... }: Verifica si el archivo se abrió correctamente. Si no, muestra un mensaje de error y termina el programa.
+	o	fclose(archivo);: Cierra el archivo.
+2.	Escritura de Archivos:
+	o	archivo = fopen("ejemplo.txt", "w");: Abre el archivo ejemplo.txt en modo escritura ("w").
+	o	if (archivo == NULL) { ... }: Verifica si el archivo se abrió correctamente. Si no, muestra un mensaje de error y termina el programa.
+	o	fprintf(archivo, "Hola, mundo!\n");: Escribe la cadena "Hola, mundo!\n" en el archivo.
+	o	fclose(archivo);: Cierra el archivo.
+3.	Lectura de Archivos:
+	o	archivo = fopen("ejemplo.txt", "r");: Abre el archivo ejemplo.txt en modo lectura ("r").
+	o	if (archivo == NULL) { ... }: Verifica si el archivo se abrió correctamente. Si no, muestra un mensaje de error y termina el programa.
+	o	char linea[100];: Declara un buffer para almacenar cada línea del archivo.
+	o	while (fgets(linea, sizeof(linea), archivo) != NULL) { ... }: Lee cada línea del archivo y la almacena en linea.
+	o	printf("%s", linea);: Muestra cada línea del archivo.
+	o	fclose(archivo);: Cierra el archivo.
+4.	Manejo de Errores en Operaciones de Archivos:
+	o	archivo = fopen("archivo_inexistente.txt", "r");: Intenta abrir un archivo inexistente en modo lectura ("r").
+	o	if (archivo == NULL) { ... }: Verifica si el archivo se abrió correctamente. Si no, muestra un mensaje de error del sistema usando perror.
+	o	fclose(archivo);: Cierra el archivo.
+Este código fuente de ejemplo proporciona una introducción al manejo de archivos en C, incluyendo la apertura y cierre de archivos, la lectura y escritura de archivos, y el manejo de errores en operaciones de archivos.
+ 
+Código Fuente de Ejemplo para el Tema 16: Manejo de memoria dinámica
+Este código fuente de ejemplo muestra el manejo de memoria dinámica en C, incluyendo el uso de malloc, calloc, realloc, y free, así como la gestión de memoria dinámica y prevención de fugas de memoria. 
+/*
+ * Tema 16: Manejo de memoria dinámica
+ *
+ * Este programa de ejemplo muestra el manejo de memoria dinámica en C,
+ * incluyendo el uso de `malloc`, `calloc`, `realloc`, y `free`,
+ * así como la gestión de memoria dinámica y prevención de fugas de memoria.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+#include <stdlib.h>  // Incluir la biblioteca estándar de funciones de memoria dinámica
+
+int main() {
+    // Uso de `malloc` para asignar memoria
+    int *ptr_malloc = (int *)malloc(5 * sizeof(int));  // Asigna memoria para 5 enteros
+
+    if (ptr_malloc == NULL) {
+        printf("Error al asignar memoria con malloc.\n");
+        return 1;
+    }
+
+    for (int i = 0; i < 5; i++) {
+        ptr_malloc[i] = i + 1;  // Inicializa los elementos del arreglo
+    }
+
+    printf("Memoria asignada con malloc:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Elemento %d: %d\n", i, ptr_malloc[i]);
+    }
+
+    free(ptr_malloc);  // Libera la memoria asignada con malloc
+
+    // Uso de `calloc` para asignar memoria
+    int *ptr_calloc = (int *)calloc(5, sizeof(int));  // Asigna memoria para 5 enteros y los inicializa a 0
+
+    if (ptr_calloc == NULL) {
+        printf("Error al asignar memoria con calloc.\n");
+        return 1;
+    }
+
+    printf("Memoria asignada con calloc:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Elemento %d: %d\n", i, ptr_calloc[i]);
+    }
+
+    free(ptr_calloc);  // Libera la memoria asignada con calloc
+
+    // Uso de `realloc` para cambiar el tamaño de la memoria asignada
+    int *ptr_realloc = (int *)malloc(5 * sizeof(int));  // Asigna memoria para 5 enteros
+
+    if (ptr_realloc == NULL) {
+        printf("Error al asignar memoria con malloc.\n");
+        return 1;
+    }
+
+    for (int i = 0; i < 5; i++) {
+        ptr_realloc[i] = i + 1;  // Inicializa los elementos del arreglo
+    }
+
+    ptr_realloc = (int *)realloc(ptr_realloc, 10 * sizeof(int));  // Cambia el tamaño del arreglo a 10 enteros
+
+    if (ptr_realloc == NULL) {
+        printf("Error al reasignar memoria con realloc.\n");
+        return 1;
+    }
+
+    for (int i = 5; i < 10; i++) {
+        ptr_realloc[i] = i + 1;  // Inicializa los nuevos elementos del arreglo
+    }
+
+    printf("Memoria reasignada con realloc:\n");
+    for (int i = 0; i < 10; i++) {
+        printf("Elemento %d: %d\n", i, ptr_realloc[i]);
+    }
+
+    free(ptr_realloc);  // Libera la memoria asignada con realloc
+
+    // Prevención de fugas de memoria
+    int *ptr_fuga = (int *)malloc(5 * sizeof(int));  // Asigna memoria para 5 enteros
+
+    if (ptr_fuga == NULL) {
+        printf("Error al asignar memoria con malloc.\n");
+        return 1;
+    }
+
+    // Si no se libera la memoria, se produce una fuga de memoria
+    // free(ptr_fuga);  // Comentar esta línea para simular una fuga de memoria
+
+    return 0;
+}
+Explicación del Código
+1.	Uso de malloc para Asignar Memoria:
+	o	int *ptr_malloc = (int *)malloc(5 * sizeof(int));: Asigna memoria para 5 enteros usando malloc.
+	o	if (ptr_malloc == NULL) { ... }: Verifica si la asignación de memoria fue exitosa. Si no, muestra un mensaje de error y termina el programa.
+	o	for (int i = 0; i < 5; i++) { ... }: Inicializa los elementos del arreglo asignado con malloc.
+	o	printf("Memoria asignada con malloc:\n");: Muestra un mensaje indicando que se está imprimiendo la memoria asignada con malloc.
+	o	for (int i = 0; i < 5; i++) { ... }: Imprime los elementos del arreglo asignado con malloc.
+	o	free(ptr_malloc);: Libera la memoria asignada con malloc.
+2.	Uso de calloc para Asignar Memoria:
+	o	int *ptr_calloc = (int *)calloc(5, sizeof(int));: Asigna memoria para 5 enteros usando calloc e inicializa los elementos a 0.
+	o	if (ptr_calloc == NULL) { ... }: Verifica si la asignación de memoria fue exitosa. Si no, muestra un mensaje de error y termina el programa.
+	o	printf("Memoria asignada con calloc:\n");: Muestra un mensaje indicando que se está imprimiendo la memoria asignada con calloc.
+	o	for (int i = 0; i < 5; i++) { ... }: Imprime los elementos del arreglo asignado con calloc.
+	o	free(ptr_calloc);: Libera la memoria asignada con calloc.
+3.	Uso de realloc para Cambiar el Tamaño de la Memoria Asignada:
+	o	int *ptr_realloc = (int *)malloc(5 * sizeof(int));: Asigna memoria para 5 enteros usando malloc.
+	o	if (ptr_realloc == NULL) { ... }: Verifica si la asignación de memoria fue exitosa. Si no, muestra un mensaje de error y termina el programa.
+	o	for (int i = 0; i < 5; i++) { ... }: Inicializa los elementos del arreglo asignado con malloc.
+	o	ptr_realloc = (int *)realloc(ptr_realloc, 10 * sizeof(int));: Cambia el tamaño del arreglo a 10 enteros usando realloc.
+	o	if (ptr_realloc == NULL) { ... }: Verifica si la reasignación de memoria fue exitosa. Si no, muestra un mensaje de error y termina el programa.
+	o	for (int i = 5; i < 10; i++) { ... }: Inicializa los nuevos elementos del arreglo.
+	o	printf("Memoria reasignada con realloc:\n");: Muestra un mensaje indicando que se está imprimiendo la memoria reasignada con realloc.
+	o	for (int i = 0; i < 10; i++) { ... }: Imprime los elementos del arreglo reasignado con realloc.
+	o	free(ptr_realloc);: Libera la memoria asignada con realloc.
+4.	Prevención de Fugas de Memoria:
+
+Este código fuente de ejemplo proporciona una introducción al manejo de memoria dinámica en C, incluyendo el uso de malloc, calloc, realloc, y free, así como la gestión de memoria dinámica y prevención de fugas de memoria.
+ 
+Código Fuente de Ejemplo para el Tema 17: Preprocesador en C
+Este código fuente de ejemplo muestra el uso de directivas del preprocesador en C, incluyendo #include, #define, #ifdef, #ifndef, #else, #endif, y #undef. 
+/*
+ * Tema 17: Preprocesador en C
+ *
+ * Este programa de ejemplo muestra el uso de directivas del preprocesador en C,
+ * incluyendo `#include`, `#define`, `#ifdef`, `#ifndef`, `#else`, `#endif`, y `#undef`.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+
+// Definición de una macro
+#define PI 3.14159
+
+// Definición de una macro con parámetros
+#define CUADRADO(x) ((x) * (x))
+
+// Uso de `#ifdef` y `#else`
+#define DEBUG
+
+#ifdef DEBUG
+    #define DEBUG_PRINT(msg) printf("DEBUG: %s\n", msg)
+#else
+    #define DEBUG_PRINT(msg)
+#endif
+
+// Uso de `#ifndef` y `#endif`
+#ifndef VERSION
+    #define VERSION "1.0"
+#endif
+
+// Uso de `#undef`
+#define TEMPERATURA 25
+#undef TEMPERATURA
+
+int main() {
+    // Uso de la macro `PI`
+    printf("Valor de PI: %.5f\n", PI);
+
+    // Uso de la macro con parámetros `CUADRADO`
+    int numero = 5;
+    printf("Cuadrado de %d: %d\n", numero, CUADRADO(numero));
+
+    // Uso de `#ifdef` y `#else`
+    DEBUG_PRINT("Este mensaje solo se muestra en modo de depuración.");
+
+    // Uso de `#ifndef` y `#endif`
+    printf("Versión del programa: %s\n", VERSION);
+
+    // Uso de `#undef`
+    // printf("Temperatura: %d\n", TEMPERATURA);  // Esto causará un error de compilación
+
+    return 0;
+}
+Explicación del Código
+1.	Inclusión de la Biblioteca Estándar:
+	o	#include <stdio.h>: Incluye la biblioteca estándar de entrada y salida, que contiene funciones como printf.
+2.	Definición de una Macro:
+	o	#define PI 3.14159: Define una macro llamada PI con el valor 3.14159.
+3.	Definición de una Macro con Parámetros:
+	o	#define CUADRADO(x) ((x) * (x)): Define una macro llamada CUADRADO que recibe un parámetro x y retorna el cuadrado de x.
+4.	Uso de #ifdef y #else:
+	o	#define DEBUG: Define una macro llamada DEBUG.
+	o	#ifdef DEBUG ... #else ... #endif: Si la macro DEBUG está definida, define la macro DEBUG_PRINT para imprimir mensajes de depuración. Si no, define DEBUG_PRINT como una macro vacía.
+5.	Uso de #ifndef y #endif:
+	o	#ifndef VERSION ... #define VERSION "1.0" ... #endif: Si la macro VERSION no está definida, define VERSION con el valor "1.0".
+6.	Uso de #undef:
+	o	#define TEMPERATURA 25: Define una macro llamada TEMPERATURA con el valor 25.
+	o	#undef TEMPERATURA: Elimina la definición de la macro TEMPERATURA.
+7.	Uso de las Macros en el Programa:
+	o	printf("Valor de PI: %.5f\n", PI);: Imprime el valor de la macro PI.
+	o	printf("Cuadrado de %d: %d\n", numero, CUADRADO(numero));: Imprime el cuadrado del número 5 usando la macro CUADRADO.
+	o	DEBUG_PRINT("Este mensaje solo se muestra en modo de depuración.");: Imprime un mensaje de depuración si la macro DEBUG está definida.
+	o	printf("Versión del programa: %s\n", VERSION);: Imprime la versión del programa definida por la macro VERSION.
+	o	// printf("Temperatura: %d\n", TEMPERATURA);: Comenta esta línea para evitar un error de compilación debido a la eliminación de la macro TEMPERATURA.
+Este código fuente de ejemplo proporciona una introducción al uso de directivas del preprocesador en C, incluyendo #include, #define, #ifdef, #ifndef, #else, #endif, y #undef.
+ 
+Código Fuente de Ejemplo para el Tema 18: Programación modular
+Este código fuente de ejemplo muestra el uso de la programación modular en C, incluyendo la creación de módulos, el uso de archivos de encabezado (.h), y la compilación de módulos. 
+Archivo modulo1.h
+/*
+ * modulo1.h
+ *
+ * Archivo de encabezado para el módulo 1.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#ifndef MODULO1_H
+#define MODULO1_H
+
+// Declaración de funciones del módulo 1
+void funcion1();
+void funcion2();
+
+#endif
+
+Archivo modulo1.c
+/*
+ * modulo1.c
+ *
+ * Implementación del módulo 1.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include "modulo1.h"  // Incluir el archivo de encabezado del módulo 1
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+
+// Implementación de la función 1 del módulo 1
+void funcion1() {
+    printf("Función 1 del módulo 1\n");
+}
+
+// Implementación de la función 2 del módulo 1
+void funcion2() {
+    printf("Función 2 del módulo 1\n");
+}
+Archivo modulo2.h
+/*
+ * modulo2.h
+ *
+ * Archivo de encabezado para el módulo 2.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#ifndef MODULO2_H
+#define MODULO2_H
+
+// Declaración de funciones del módulo 2
+void funcion3();
+void funcion4();
+
+#endif
+
+Archivo modulo2.c
+/*
+ * modulo2.c
+ *
+ * Implementación del módulo 2.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include "modulo2.h"  // Incluir el archivo de encabezado del módulo 2
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+
+// Implementación de la función 3 del módulo 2
+void funcion3() {
+    printf("Función 3 del módulo 2\n");
+}
+
+// Implementación de la función 4 del módulo 2
+void funcion4() {
+    printf("Función 4 del módulo 2\n");
+}
+Archivo main.c
+/*
+ * main.c
+ *
+ * Programa principal que utiliza los módulos 1 y 2.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include "modulo1.h"  // Incluir el archivo de encabezado del módulo 1
+#include "modulo2.h"  // Incluir el archivo de encabezado del módulo 2
+
+int main() {
+    // Llamada a las funciones de los módulos
+    funcion1();
+    funcion2();
+    funcion3();
+    funcion4();
+
+    return 0;
+}
+Explicación del Código
+1.	Archivos de Encabezado (.h):
+	o	modulo1.h: Contiene las declaraciones de las funciones del módulo 1.
+	o	modulo2.h: Contiene las declaraciones de las funciones del módulo 2.
+2.	Archivos de Implementación (.c):
+	o	modulo1.c: Contiene la implementación de las funciones del módulo 1.
+	o	modulo2.c: Contiene la implementación de las funciones del módulo 2.
+3.	Programa Principal (main.c):
+	o	#include "modulo1.h": Incluye el archivo de encabezado del módulo 1.
+	o	#include "modulo2.h": Incluye el archivo de encabezado del módulo 2.
+	o	int main() { ... }: Define la función principal del programa.
+	o	funcion1();: Llama a la función funcion1 del módulo 1.
+	o	funcion2();: Llama a la función funcion2 del módulo 1.
+	o	funcion3();: Llama a la función funcion3 del módulo 2.
+	o	funcion4();: Llama a la función funcion4 del módulo 2.
+4.	Compilación de Módulos:
+	o	Para compilar el programa, se deben compilar los módulos y luego enlazarlos:
+gcc -c modulo1.c -o modulo1.o
+gcc -c modulo2.c -o modulo2.o
+gcc main.c modulo1.o modulo2.o -o programa
+	o	gcc -c modulo1.c -o modulo1.o: Compila el archivo modulo1.c y genera el archivo objeto modulo1.o.
+	o	gcc -c modulo2.c -o modulo2.o: Compila el archivo modulo2.c y genera el archivo objeto modulo2.o.
+	o	gcc main.c modulo1.o modulo2.o -o programa: Compila el archivo main.c y enlaza los archivos objeto modulo1.o y modulo2.o para generar el ejecutable programa.
+Este código fuente de ejemplo proporciona una introducción al uso de la programación modular en C, incluyendo la creación de módulos, el uso de archivos de encabezado (.h), y la compilación de módulos.
+
+Código Fuente de Ejemplo para el Tema 19: Programación orientada a objetos en C (Simulación)
+Este código fuente de ejemplo muestra cómo simular conceptos de programación orientada a objetos (POO) en C, incluyendo la definición de clases y objetos, atributos y métodos, y la simulación de herencia y polimorfismo. 
+/*
+ * Tema 19: Programación orientada a objetos en C (Simulación)
+ *
+ * Este programa de ejemplo muestra cómo simular conceptos de programación orientada a objetos (POO) en C,
+ * incluyendo la definición de clases y objetos, atributos y métodos,
+ * y la simulación de herencia y polimorfismo.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+#include <string.h>  // Incluir la biblioteca estándar de manipulación de cadenas
+
+// Definición de una estructura que simula una clase
+typedef struct {
+    char nombre[50];
+    int edad;
+    float altura;
+} Persona;
+
+// Función para inicializar una estructura (constructor)
+void inicializar_persona(Persona *p, char nombre[], int edad, float altura) {
+    strcpy(p->nombre, nombre);
+    p->edad = edad;
+    p->altura = altura;
+}
+
+// Función para imprimir los datos de una estructura (método)
+void imprimir_persona(Persona p) {
+    printf("Nombre: %s\n", p.nombre);
+    printf("Edad: %d\n", p.edad);
+    printf("Altura: %.2f metros\n", p.altura);
+}
+
+// Definición de una estructura que simula herencia
+typedef struct {
+    Persona persona;  // Atributo de tipo Persona (simulación de herencia)
+    char carrera[50];
+} Estudiante;
+
+// Función para inicializar una estructura Estudiante (constructor)
+void inicializar_estudiante(Estudiante *e, char nombre[], int edad, float altura, char carrera[]) {
+    inicializar_persona(&(e->persona), nombre, edad, altura);
+    strcpy(e->carrera, carrera);
+}
+
+// Función para imprimir los datos de una estructura Estudiante (método)
+void imprimir_estudiante(Estudiante e) {
+    imprimir_persona(e.persona);
+    printf("Carrera: %s\n", e.carrera);
+}
+
+int main() {
+    // Simulación de creación de un objeto de tipo Persona
+    Persona persona1;
+    inicializar_persona(&persona1, "Juan", 25, 1.75);
+
+    // Simulación de uso de métodos de la clase Persona
+    printf("Datos de la persona:\n");
+    imprimir_persona(persona1);
+    printf("\n");
+
+    // Simulación de creación de un objeto de tipo Estudiante
+    Estudiante estudiante1;
+    inicializar_estudiante(&estudiante1, "Ana", 22, 1.65, "Ingeniería");
+
+    // Simulación de uso de métodos de la clase Estudiante
+    printf("Datos del estudiante:\n");
+    imprimir_estudiante(estudiante1);
+
+    return 0;
+}
+Explicación del Código
+1.	Definición de una Estructura que Simula una Clase:
+	o	typedef struct { ... } Persona;: Define una estructura llamada Persona que simula una clase con atributos nombre, edad, y altura.
+2.	Función para Inicializar una Estructura (Constructor):
+	o	void inicializar_persona(Persona *p, char nombre[], int edad, float altura) { ... }: Define una función que recibe un puntero a una estructura Persona y los valores para inicializar sus atributos.
+	o	strcpy(p->nombre, nombre);: Copia la cadena nombre al atributo nombre de la estructura.
+	o	p->edad = edad;: Asigna el valor edad al atributo edad de la estructura.
+	o	p->altura = altura;: Asigna el valor altura al atributo altura de la estructura.
+3.	Función para Imprimir los Datos de una Estructura (Método):
+	o	void imprimir_persona(Persona p) { ... }: Define una función que recibe una estructura Persona y muestra sus atributos.
+	o	printf("Nombre: %s\n", p.nombre);: Imprime el atributo nombre de la estructura.
+	o	printf("Edad: %d\n", p.edad);: Imprime el atributo edad de la estructura.
+	o	printf("Altura: %.2f metros\n", p.altura);: Imprime el atributo altura de la estructura con dos decimales.
+4.	Definición de una Estructura que Simula Herencia:
+	o	typedef struct { ... } Estudiante;: Define una estructura llamada Estudiante que simula herencia al incluir un atributo de tipo Persona y un atributo adicional carrera.
+5.	Función para Inicializar una Estructura Estudiante (Constructor):
+	o	void inicializar_estudiante(Estudiante *e, char nombre[], int edad, float altura, char carrera[]) { ... }: Define una función que recibe un puntero a una estructura Estudiante y los valores para inicializar sus atributos.
+	o	inicializar_persona(&(e->persona), nombre, edad, altura);: Llama a la función inicializar_persona para inicializar los atributos heredados de Persona.
+	o	strcpy(e->carrera, carrera);: Copia la cadena carrera al atributo carrera de la estructura.
+6.	Función para Imprimir los Datos de una Estructura Estudiante (Método):
+	o	void imprimir_estudiante(Estudiante e) { ... }: Define una función que recibe una estructura Estudiante y muestra sus atributos.
+	o	imprimir_persona(e.persona);: Llama a la función imprimir_persona para mostrar los atributos heredados de Persona.
+	o	printf("Carrera: %s\n", e.carrera);: Imprime el atributo carrera de la estructura.
+7.	Simulación de Creación de Objetos y Uso de Métodos:
+	o	Persona persona1;: Declara una variable persona1 de tipo Persona.
+	o	inicializar_persona(&persona1, "Juan", 25, 1.75);: Llama a la función inicializar_persona para inicializar la estructura persona1.
+	o	printf("Datos de la persona:\n");: Muestra un mensaje indicando que se mostrarán los datos de la persona.
+	o	imprimir_persona(persona1);: Llama a la función imprimir_persona para mostrar los datos de la estructura persona1.
+	o	Estudiante estudiante1;: Declara una variable estudiante1 de tipo Estudiante.
+	o	inicializar_estudiante(&estudiante1, "Ana", 22, 1.65, "Ingeniería");: Llama a la función inicializar_estudiante para inicializar la estructura estudiante1.
+	o	printf("Datos del estudiante:\n");: Muestra un mensaje indicando que se mostrarán los datos del estudiante.
+	o	imprimir_estudiante(estudiante1);: Llama a la función imprimir_estudiante para mostrar los datos de la estructura estudiante1.
+Este código fuente de ejemplo proporciona una introducción a la simulación de conceptos de programación orientada a objetos (POO) en C, incluyendo la definición de clases y objetos, atributos y métodos, y la simulación de herencia y polimorfismo.
+
+Código Fuente de Ejemplo para el Tema 20: Manejo de errores y excepciones
+Este código fuente de ejemplo muestra el manejo de errores y excepciones en C, incluyendo el uso de assert para depuración, el manejo de errores comunes, y el uso de errno y perror. 
+/*
+ * Tema 20: Manejo de errores y excepciones
+ *
+ * Este programa de ejemplo muestra el manejo de errores y excepciones en C,
+ * incluyendo el uso de `assert` para depuración, el manejo de errores comunes,
+ * y el uso de `errno` y `perror`.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+#include <assert.h>  // Incluir la biblioteca estándar de aserciones
+#include <errno.h>  // Incluir la biblioteca estándar de manejo de errores
+#include <string.h>  // Incluir la biblioteca estándar de manipulación de cadenas
+
+// Función para demostrar el uso de `assert`
+void ejemplo_assert(int x) {
+    assert(x != 0);  // Aserción: x no debe ser cero
+    printf("El valor de x es: %d\n", x);
+}
+
+// Función para demostrar el manejo de errores comunes
+void ejemplo_errores_comunes() {
+    FILE *archivo = fopen("archivo_inexistente.txt", "r");  // Intenta abrir un archivo inexistente
+
+    if (archivo == NULL) {
+        printf("Error al abrir el archivo: %s\n", strerror(errno));  // Muestra el mensaje de error
+        return;
+    }
+
+    fclose(archivo);  // Cierra el archivo
+}
+
+// Función para demostrar el uso de `errno` y `perror`
+void ejemplo_errno_perror() {
+    FILE *archivo = fopen("archivo_inexistente.txt", "r");  // Intenta abrir un archivo inexistente
+
+    if (archivo == NULL) {
+        perror("Error al abrir el archivo");  // Muestra un mensaje de error del sistema
+        return;
+    }
+
+    fclose(archivo);  // Cierra el archivo
+}
+
+int main() {
+    // Ejemplo de uso de `assert`
+    int x = 5;
+    ejemplo_assert(x);
+
+    // Ejemplo de manejo de errores comunes
+    ejemplo_errores_comunes();
+
+    // Ejemplo de uso de `errno` y `perror`
+    ejemplo_errno_perror();
+
+    return 0;
+}
+Explicación del Código
+1.	Uso de assert para Depuración:
+	o	void ejemplo_assert(int x) { ... }: Define una función que recibe un entero x y utiliza assert para verificar que x no sea cero.
+	o	assert(x != 0);: Si x es cero, la aserción falla y el programa termina con un mensaje de error.
+	o	printf("El valor de x es: %d\n", x);: Imprime el valor de x si la aserción no falla.
+2.	Manejo de Errores Comunes:
+	o	void ejemplo_errores_comunes() { ... }: Define una función que intenta abrir un archivo inexistente y muestra un mensaje de error si falla.
+	o	FILE *archivo = fopen("archivo_inexistente.txt", "r");: Intenta abrir un archivo inexistente en modo lectura ("r").
+	o	if (archivo == NULL) { ... }: Verifica si el archivo se abrió correctamente. Si no, muestra un mensaje de error usando strerror(errno).
+	o	fclose(archivo);: Cierra el archivo (si se abrió correctamente).
+3.	Uso de errno y perror:
+	o	void ejemplo_errno_perror() { ... }: Define una función que intenta abrir un archivo inexistente y muestra un mensaje de error del sistema usando perror.
+	o	FILE *archivo = fopen("archivo_inexistente.txt", "r");: Intenta abrir un archivo inexistente en modo lectura ("r").
+	o	if (archivo == NULL) { ... }: Verifica si el archivo se abrió correctamente. Si no, muestra un mensaje de error del sistema usando perror.
+	o	fclose(archivo);: Cierra el archivo (si se abrió correctamente).
+4.	Llamada a las Funciones:
+	o	int x = 5;: Declara una variable entera x y la inicializa con el valor 5.
+	o	ejemplo_assert(x);: Llama a la función ejemplo_assert con el valor de x.
+	o	ejemplo_errores_comunes();: Llama a la función ejemplo_errores_comunes.
+	o	ejemplo_errno_perror();: Llama a la función ejemplo_errno_perror.
+Este código fuente de ejemplo proporciona una introducción al manejo de errores y excepciones en C, incluyendo el uso de assert para depuración, el manejo de errores comunes, y el uso de errno y perror.
+
+Código Fuente de Ejemplo para el Tema 21: Bibliotecas estándar de C
+Este código fuente de ejemplo muestra el uso de algunas de las bibliotecas estándar de C, incluyendo stdio.h, stdlib.h, string.h, y math.h. 
+*
+ * Tema 21: Bibliotecas estándar de C
+ *
+ * Este programa de ejemplo muestra el uso de algunas de las bibliotecas estándar de C,
+ * incluyendo `stdio.h`, `stdlib.h`, `string.h`, y `math.h`.
+ *
+ * Autor: Jose Jesus Rocha Quezada   -  chuche@cimat.mx
+ * Modulo 1: Introducción a C  - Tronco Comun
+ */
+
+#include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
+#include <stdlib.h>  // Incluir la biblioteca estándar de funciones de memoria dinámica
+#include <string.h>  // Incluir la biblioteca estándar de manipulación de cadenas
+#include <math.h>  // Incluir la biblioteca estándar de funciones matemáticas
+
+int main() {
+    // Uso de funciones de `stdio.h`
+    printf("Uso de funciones de `stdio.h`:\n");
+
+    int edad;
+    printf("Ingresa tu edad: ");
+    scanf("%d", &edad);  // Lee un entero desde la entrada estándar
+    printf("Tu edad es: %d\n", edad);
+
+    char nombre[50];
+    printf("Ingresa tu nombre: ");
+    scanf("%s", nombre);  // Lee una cadena de caracteres desde la entrada estándar
+    printf("Tu nombre es: %s\n", nombre);
+
+    printf("\n");
+
+    // Uso de funciones de `stdlib.h`
+    printf("Uso de funciones de `stdlib.h`:\n");
+
+    int *ptr = (int *)malloc(5 * sizeof(int));  // Asigna memoria para 5 enteros
+    if (ptr == NULL) {
+        printf("Error al asignar memoria con malloc.\n");
+        return 1;
+    }
+
+    for (int i = 0; i < 5; i++) {
+        ptr[i] = i + 1;  // Inicializa los elementos del arreglo
+    }
+
+    printf("Memoria asignada con malloc:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Elemento %d: %d\n", i, ptr[i]);
+    }
+
+    free(ptr);  // Libera la memoria asignada con malloc
+
+    printf("\n");
+
+    // Uso de funciones de `string.h`
+    printf("Uso de funciones de `string.h`:\n");
+
+    char cadena1[] = "Hola";
+    char cadena2[] = "Mundo";
+    char cadena3[50];
+
+    strcpy(cadena3, cadena1);  // Copia cadena1 a cadena3
+    printf("Cadena copiada: %s\n", cadena3);
+
+    strcat(cadena3, " ");  // Concatena un espacio a cadena3
+    strcat(cadena3, cadena2);  // Concatena cadena2 a cadena3
+    printf("Cadena concatenada: %s\n", cadena3);
+
+    int longitud = strlen(cadena3);  // Obtiene la longitud de cadena3
+    printf("Longitud de la cadena: %d\n", longitud);
+
+    printf("\n");
+
+    // Uso de funciones de `math.h`
+    printf("Uso de funciones de `math.h`:\n");
+
+    double numero = 25.0;
+    double raiz = sqrt(numero);  // Calcula la raíz cuadrada de numero
+    printf("Raíz cuadrada de %.2f: %.2f\n", numero, raiz);
+
+    double potencia = pow(numero, 2);  // Eleva numero al cuadrado
+    printf("%.2f elevado al cuadrado: %.2f\n", numero, potencia);
+
+    double seno = sin(numero);  // Calcula el seno de numero
+    printf("Seno de %.2f: %.2f\n", numero, seno);
+
+    return 0;
+}
+
+Explicación del Código
+1.	Uso de Funciones de stdio.h:
+	o	printf("Ingresa tu edad: ");: Muestra un mensaje solicitando la edad.
+	o	scanf("%d", &edad);: Lee un entero desde la entrada estándar y lo almacena en edad.
+	o	printf("Tu edad es: %d\n", edad);: Muestra la edad ingresada.
+	o	printf("Ingresa tu nombre: ");: Muestra un mensaje solicitando el nombre.
+	o	scanf("%s", nombre);: Lee una cadena de caracteres desde la entrada estándar y la almacena en nombre.
+	o	printf("Tu nombre es: %s\n", nombre);: Muestra el nombre ingresado.
+2.	Uso de Funciones de stdlib.h:
+	o	int *ptr = (int *)malloc(5 * sizeof(int));: Asigna memoria para 5 enteros usando malloc.
+	o	if (ptr == NULL) { ... }: Verifica si la asignación de memoria fue exitosa. Si no, muestra un mensaje de error y termina el programa.
+	o	for (int i = 0; i < 5; i++) { ... }: Inicializa los elementos del arreglo asignado con malloc.
+	o	printf("Memoria asignada con malloc:\n");: Muestra un mensaje indicando que se está imprimiendo la memoria asignada con malloc.
+	o	for (int i = 0; i < 5; i++) { ... }: Imprime los elementos del arreglo asignado con malloc.
+	o	free(ptr);: Libera la memoria asignada con malloc.
+3.	Uso de Funciones de string.h:
+	o	strcpy(cadena3, cadena1);: Copia la cadena cadena1 a cadena3.
+	o	printf("Cadena copiada: %s\n", cadena3);: Muestra la cadena copiada.
+	o	strcat(cadena3, " ");: Concatena un espacio a cadena3.
+	o	strcat(cadena3, cadena2);: Concatena la cadena cadena2 a cadena3.
+	o	printf("Cadena concatenada: %s\n", cadena3);: Muestra la cadena concatenada.
+	o	int longitud = strlen(cadena3);: Obtiene la longitud de la cadena cadena3.
+	o	printf("Longitud de la cadena: %d\n", longitud);: Muestra la longitud de la cadena.
+4.	Uso de Funciones de math.h:
+	o	double raiz = sqrt(numero);: Calcula la raíz cuadrada del número numero.
+	o	printf("Raíz cuadrada de %.2f: %.2f\n", numero, raiz);: Muestra la raíz cuadrada del número.
+	o	double potencia = pow(numero, 2);: Eleva el número numero al cuadrado.
+	o	printf("%.2f elevado al cuadrado: %.2f\n", numero, potencia);: Muestra el número elevado al cuadrado.
+	o	double seno = sin(numero);: Calcula el seno del número numero.
+	o	printf("Seno de %.2f: %.2f\n", numero, seno);: Muestra el seno del número.
+Este código fuente de ejemplo proporciona una introducción al uso de algunas de las bibliotecas estándar de C, incluyendo stdio.h, stdlib.h, string.h, y math.h.
+
+Código Fuente de Ejemplo para el Tema 22: Manipulación de Bits en C
+#include <stdio.h>
+
+// Función para contar el número de bits encendidos en un número
+int contar_bits_encendidos(int n) {
+    int contador = 0;
+    while (n) {
+        contador += n & 1;  // Suma 1 si el bit menos significativo es 1
+        n >>= 1;           // Desplaza el número a la derecha
+    }
+    return contador;
+}
+
+// Función para invertir los bits de un número
+int invertir_bits(int n) {
+    int resultado = 0;
+    for (int i = 0; i < 32; i++) {  // Suponemos un entero de 32 bits
+        resultado <<= 1;           // Desplaza el resultado a la izquierda
+        resultado |= n & 1;        // Añade el bit menos significativo de n al resultado
+        n >>= 1;                   // Desplaza n a la derecha
+    }
+    return resultado;
+}
+
+// Función principal
+int main() {
+    int numero = 13;  // Número de ejemplo: 1101 en binario
+
+    // Contar bits encendidos
+    int bits_encendidos = contar_bits_encendidos(numero);
+    printf("El número %d tiene %d bits encendidos.\n", numero, bits_encendidos);
+
+    // Invertir bits
+    int numero_invertido = invertir_bits(numero);
+    printf("El número %d con sus bits invertidos es %d.\n", numero, numero_invertido);
+
+    // Operaciones bit a bit
+    int a = 5;  // 0101 en binario
+    int b = 3;  // 0011 en binario
+
+    // Operación AND
+    int resultado_and = a & b;  // 0101 & 0011 = 0001
+    printf("Resultado de %d & %d: %d\n", a, b, resultado_and);
+
+    // Operación OR
+    int resultado_or = a | b;  // 0101 | 0011 = 0111
+    printf("Resultado de %d | %d: %d\n", a, b, resultado_or);
+
+    // Operación XOR
+    int resultado_xor = a ^ b;  // 0101 ^ 0011 = 0110
+    printf("Resultado de %d ^ %d: %d\n", a, b, resultado_xor);
+
+    // Operación NOT
+    int resultado_not = ~a;  // ~0101 = 1010 (en complemento a dos)
+    printf("Resultado de ~%d: %d\n", a, resultado_not);
+
+    // Desplazamiento a la izquierda
+    int resultado_shift_left = a << 1;  // 0101 << 1 = 1010
+    printf("Resultado de %d << 1: %d\n", a, resultado_shift_left);
+
+    // Desplazamiento a la derecha
+    int resultado_shift_right = a >> 1;  // 0101 >> 1 = 0010
+    printf("Resultado de %d >> 1: %d\n", a, resultado_shift_right);
+
+    return 0;
+}
+Explicación Extensa
+Manipulación de Bits
+La manipulación de bits es una técnica fundamental en la programación en C que permite operar directamente sobre los bits individuales de un número. Esto es especialmente útil para optimizar el uso de memoria, mejorar el rendimiento en ciertos tipos de aplicaciones, y para implementar operaciones de bajo nivel que requieren un control preciso sobre los datos.
+Operadores Bit a Bit
+1.	AND (&): Realiza una operación AND bit a bit. Cada bit del resultado es 1 si y solo si ambos bits correspondientes de los operandos son 1.
+int resultado_and = a & b;  // 0101 & 0011 = 0001
+2.	OR (|): Realiza una operación OR bit a bit. Cada bit del resultado es 1 si al menos uno de los bits correspondientes de los operandos es 1.
+int resultado_or = a | b;  // 0101 | 0011 = 0111
+3.	XOR (^): Realiza una operación XOR bit a bit. Cada bit del resultado es 1 si y solo si uno de los bits correspondientes de los operandos es 1 (pero no ambos).
+int resultado_xor = a ^ b;  // 0101 ^ 0011 = 0110
+4.	NOT (~): Realiza una operación NOT bit a bit. Invierte cada bit del operando.
+int resultado_not = ~a;  // ~0101 = 1010 (en complemento a dos)
+5.	Desplazamiento a la izquierda (<<): Desplaza los bits del operando a la izquierda.
+int resultado_shift_left = a << 1;  // 0101 << 1 = 1010
+6.	Desplazamiento a la derecha (>>): Desplaza los bits del operando a la derecha.
+int resultado_shift_right = a >> 1;  // 0101 >> 1 = 0010
+
+Aplicaciones Prácticas
+1.	Conteo de Bits Encendidos: Esta función cuenta cuántos bits están encendidos (iguales a 1) en un número. Es útil en aplicaciones donde se necesita conocer la cantidad de bits significativos en un número.
+int contar_bits_encendidos(int n) {
+    int contador = 0;
+    while (n) {
+        contador += n & 1;  // Suma 1 si el bit menos significativo es 1
+        n >>= 1;           // Desplaza el número a la derecha
+    }
+    return contador;
+}
+2.	Inversión de Bits: Esta función invierte el orden de los bits en un número. Es útil en aplicaciones donde se necesita manipular el orden de los bits, como en algoritmos de compresión o criptografía.
+int invertir_bits(int n) {
+    int resultado = 0;
+    for (int i = 0; i < 32; i++) {  // Suponemos un entero de 32 bits
+        resultado <<= 1;           // Desplaza el resultado a la izquierda
+        resultado |= n & 1;        // Añade el bit menos significativo de n al resultado
+        n >>= 1;                   // Desplaza n a la derecha
+    }
+    return resultado;
+}
+Ejemplos Prácticos
+En el código fuente proporcionado, se demuestran estas operaciones y aplicaciones prácticas. Se utiliza un número de ejemplo (13, que en binario es 1101) para ilustrar cómo funcionan las operaciones bit a bit. Además, se muestra cómo contar los bits encendidos y cómo invertir los bits de un número.
+Conclusiones
+La manipulación de bits es una herramienta poderosa en la programación en C que permite un control detallado sobre los datos. A través de operaciones bit a bit, se pueden implementar algoritmos eficientes, optimizar el uso de memoria, y realizar operaciones de bajo nivel que son esenciales en ciertos tipos de aplicaciones, como sistemas embebidos, criptografía, y compresión de datos. El conocimiento y la habilidad para utilizar estas técnicas son fundamentales para cualquier programador que desee dominar el lenguaje C y desarrollar aplicaciones de alto rendimiento.
+
+Código Fuente de Ejemplo para el Tema 23: Tiempo y Fecha en C
+#include <stdio.h>
+#include <time.h>
+
+// Función para mostrar la fecha y hora actual en formato local
+void mostrar_fecha_hora_local() {
+    time_t tiempo_actual = time(NULL);  // Obtiene el tiempo actual en segundos desde la época
+    struct tm *tiempo_local = localtime(&tiempo_actual);  // Convierte a estructura tm en la zona horaria local
+
+    // Formatea y muestra la fecha y hora local
+    char buffer[80];
+    strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", tiempo_local);
+    printf("Fecha y hora local: %s\n", buffer);
+}
+
+// Función para mostrar la fecha y hora actual en formato UTC
+void mostrar_fecha_hora_utc() {
+    time_t tiempo_actual = time(NULL);  // Obtiene el tiempo actual en segundos desde la época
+    struct tm *tiempo_utc = gmtime(&tiempo_actual);  // Convierte a estructura tm en UTC
+
+    // Formatea y muestra la fecha y hora UTC
+    char buffer[80];
+    strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", tiempo_utc);
+    printf("Fecha y hora UTC: %s\n", buffer);
+}
+
+// Función para calcular la diferencia de tiempo entre dos instantes
+void calcular_diferencia_tiempo() {
+    time_t tiempo1 = time(NULL);  // Tiempo inicial
+    sleep(2);  // Simula una operación que tarda 2 segundos
+    time_t tiempo2 = time(NULL);  // Tiempo final
+
+    // Calcula la diferencia de tiempo en segundos
+    double diferencia = difftime(tiempo2, tiempo1);
+    printf("Diferencia de tiempo: %.2f segundos\n", diferencia);
+}
+
+// Función principal
+int main() {
+    // Mostrar fecha y hora local
+    mostrar_fecha_hora_local();
+
+    // Mostrar fecha y hora UTC
+    mostrar_fecha_hora_utc();
+
+    // Calcular diferencia de tiempo
+    calcular_diferencia_tiempo();
+
+    return 0;
+}
+Explicación Extensa
+Uso de la Biblioteca time.h
+La biblioteca time.h en C proporciona funciones y estructuras para manejar fechas y horas. Es esencial para aplicaciones que requieren funcionalidades relacionadas con el tiempo, como relojes, cronómetros, y sistemas de registro de eventos.
+Estructura tm
+La estructura tm es una estructura predefinida en time.h que contiene los componentes de la fecha y hora:
+struct tm {
+    int tm_sec;   // Segundos [0-60]
+    int tm_min;   // Minutos [0-59]
+    int tm_hour;  // Horas [0-23]
+    int tm_mday;  // Día del mes [1-31]
+    int tm_mon;   // Mes [0-11]
+    int tm_year;  // Año desde 1900
+    int tm_wday;  // Día de la semana [0-6] (Domingo = 0)
+    int tm_yday;  // Día del año [0-365]
+    int tm_isdst; // Indicador de horario de verano
+};
+Obtención de la Hora Actual
+1.	Función time: Obtiene el tiempo actual en segundos desde la época (1 de enero de 1970).
+time_t tiempo_actual = time(NULL);
+2.	Función localtime: Convierte un time_t a una estructura tm en la zona horaria local.
+struct tm *tiempo_local = localtime(&tiempo_actual);
+3.	Función gmtime: Convierte un time_t a una estructura tm en UTC (Tiempo Universal Coordinado).
+struct tm *tiempo_utc = gmtime(&tiempo_actual);
+Manipulación de Fechas y Horas
+1.	Función mktime: Convierte una estructura tm a un time_t.
+struct tm fecha = {0, 0, 0, 1, 0, 120};  // 1 de enero de 2020
+time_t tiempo_convertido = mktime(&fecha);
+2.	Función difftime: Calcula la diferencia en segundos entre dos time_t.
+time_t tiempo1 = time(NULL);
+sleep(2);  // Simula una operación que tarda 2 segundos
+time_t tiempo2 = time(NULL);
+double diferencia = difftime(tiempo2, tiempo1);
+Formateo de Fechas y Horas
+1.	Función strftime: Formatea una estructura tm en una cadena.
+char buffer[80];
+strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", tiempo_local);
+2.	Especificadores de Formato:
+o	%Y: Año con siglo (por ejemplo, 2023)
+o	%m: Mes en formato numérico (01-12)
+o	%d: Día del mes (01-31)
+o	%H: Hora en formato de 24 horas (00-23)
+o	%M: Minutos (00-59)
+o	%S: Segundos (00-60)
+Ejemplos Prácticos
+En el código fuente proporcionado, se demuestran estas funcionalidades:
+1.	Mostrar Fecha y Hora Local: Se obtiene el tiempo actual, se convierte a la zona horaria local y se muestra en un formato legible.
+void mostrar_fecha_hora_local() {
+    time_t tiempo_actual = time(NULL);
+    struct tm *tiempo_local = localtime(&tiempo_actual);
+    char buffer[80];
+    strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", tiempo_local);
+    printf("Fecha y hora local: %s\n", buffer);
+}
+2.	Mostrar Fecha y Hora UTC: Se obtiene el tiempo actual, se convierte a UTC y se muestra en un formato legible.
+void mostrar_fecha_hora_utc() {
+    time_t tiempo_actual = time(NULL);
+    struct tm *tiempo_utc = gmtime(&tiempo_actual);
+    char buffer[80];
+    strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", tiempo_utc);
+    printf("Fecha y hora UTC: %s\n", buffer);
+}
+3.	Calcular Diferencia de Tiempo: Se obtiene el tiempo inicial, se simula una operación que tarda 2 segundos, se obtiene el tiempo final y se calcula la diferencia.
+void calcular_diferencia_tiempo() {
+    time_t tiempo1 = time(NULL);
+    sleep(2);
+    time_t tiempo2 = time(NULL);
+    double diferencia = difftime(tiempo2, tiempo1);
+    printf("Diferencia de tiempo: %.2f segundos\n", diferencia);
+}
+Conclusiones
+La biblioteca time.h es una herramienta esencial para manejar fechas y horas en C. Proporciona funciones y estructuras que permiten obtener, manipular y formatear fechas y horas de manera eficiente. Esto es crucial para aplicaciones que requieren funcionalidades relacionadas con el tiempo, como relojes, cronómetros, sistemas de registro de eventos, y más. El conocimiento y la habilidad para utilizar estas funciones son fundamentales para cualquier programador que desee desarrollar aplicaciones que interactúen con el tiempo.
+
+Código Fuente de Ejemplo para el Tema 24: Programación Concurrente en C (Simulación)
+#include <stdio.h>
+#include <pthread.h>
+#include <unistd.h>
+
+// Función que será ejecutada por cada hilo
+void *funcion_hilo(void *arg) {
+    int id_hilo = *(int *)arg;
+    printf("Hilo %d iniciado\n", id_hilo);
+    sleep(2);  // Simula una operación que tarda 2 segundos
+    printf("Hilo %d terminado\n", id_hilo);
+    pthread_exit(NULL);
+}
+
+// Función para calcular números primos en paralelo
+void *calcular_primos(void *arg) {
+    int inicio = *(int *)arg;
+    int fin = inicio + 100;
+    for (int i = inicio; i < fin; i++) {
+        int es_primo = 1;
+        for (int j = 2; j <= i / 2; j++) {
+            if (i % j == 0) {
+                es_primo = 0;
+                break;
+            }
+        }
+        if (es_primo) {
+            printf("%d es primo\n", i);
+        }
+    }
+    pthread_exit(NULL);
+}
+
+// Función principal
+int main() {
+    // Crear hilos simples
+    pthread_t hilos[5];
+    int ids[5] = {1, 2, 3, 4, 5};
+
+    for (int i = 0; i < 5; i++) {
+        pthread_create(&hilos[i], NULL, funcion_hilo, &ids[i]);
+    }
+
+    for (int i = 0; i < 5; i++) {
+        pthread_join(hilos[i], NULL);
+    }
+
+    // Calcular números primos en paralelo
+    pthread_t hilos_primos[4];
+    int rangos[4] = {1, 101, 201, 301};
+
+    for (int i = 0; i < 4; i++) {
+        pthread_create(&hilos_primos[i], NULL, calcular_primos, &rangos[i]);
+    }
+
+    for (int i = 0; i < 4; i++) {
+        pthread_join(hilos_primos[i], NULL);
+    }
+
+    return 0;
+}
+
+Explicación Extensa
+Programación Concurrente en C
+La programación concurrente es la ejecución de múltiples tareas simultáneamente. En C, esto se logra principalmente a través de hilos (threads), que son unidades de ejecución más pequeñas que un proceso y comparten memoria con otros hilos del mismo proceso. La biblioteca pthread.h proporciona las funciones necesarias para crear y gestionar hilos en C.
+Conceptos Básicos de Programación Concurrente
+	1.	Hilos (Threads): Unidades de ejecución más pequeñas que un proceso, comparten memoria con otros hilos del mismo proceso.
+	2.	Procesos: Unidades de ejecución independientes, no comparten memoria.
+	3.	Ventajas: Mejora el rendimiento, permite multitarea, aprovecha múltiples núcleos de CPU.
+Uso de Hilos (Threads) en C (con pthread.h)
+	1.	Inclusión de la Biblioteca:
+#include <pthread.h>
+	2.	Creación de un Hilo: Uso de pthread_create.
+pthread_t hilo;
+pthread_create(&hilo, NULL, funcion_hilo, &id_hilo);
+	3.	Sincronización de Hilos: Uso de pthread_join para esperar a que un hilo termine.
+pthread_join(hilo, NULL);
+Manejo de Recursos Compartidos
+	1.	Problemas de Concurrencia: Condiciones de carrera, acceso no sincronizado a recursos compartidos.
+	2.	Mutexes: Mecanismo de sincronización para proteger recursos compartidos.
+pthread_mutex_t mutex;
+pthread_mutex_init(&mutex, NULL);
+pthread_mutex_lock(&mutex);
+// Acceso a recurso compartido
+pthread_mutex_unlock(&mutex);
+pthread_mutex_destroy(&mutex);
+Ejemplos Prácticos
+En el código fuente proporcionado, se demuestran estas funcionalidades:
+1.	Crear Hilos Simples: Se crean 5 hilos que ejecutan una función simple que simula una operación que tarda 2 segundos.
+void *funcion_hilo(void *arg) {
+    int id_hilo = *(int *)arg;
+    printf("Hilo %d iniciado\n", id_hilo);
+    sleep(2);
+    printf("Hilo %d terminado\n", id_hilo);
+    pthread_exit(NULL);
+}
+2.	Calcular Números Primos en Paralelo: Se crean 4 hilos que calculan números primos en rangos diferentes.
+void *calcular_primos(void *arg) {
+    int inicio = *(int *)arg;
+    int fin = inicio + 100;
+    for (int i = inicio; i < fin; i++) {
+        int es_primo = 1;
+        for (int j = 2; j <= i / 2; j++) {
+            if (i % j == 0) {
+                es_primo = 0;
+                break;
+            }
+        }
+        if (es_primo) {
+            printf("%d es primo\n", i);
+        }
+    }
+    pthread_exit(NULL);
+}
+Conclusiones
+La programación concurrente en C, utilizando hilos (threads), es una técnica poderosa para mejorar el rendimiento de aplicaciones que pueden beneficiarse de la ejecución paralela de tareas. La biblioteca pthread.h proporciona las funciones necesarias para crear, gestionar y sincronizar hilos. El manejo adecuado de recursos compartidos y la prevención de condiciones de carrera son esenciales para garantizar el correcto funcionamiento de aplicaciones concurrentes. El conocimiento y la habilidad para utilizar estas técnicas son fundamentales para cualquier programador que desee desarrollar aplicaciones eficientes y escalables.
+
+
+Código Fuente de Ejemplo para el Tema 25: Programación de Sistemas en C
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <signal.h>
+#include <stdlib.h>
+
+// Manejador de señal para SIGINT
+void manejador_senal(int senal) {
+    printf("Señal recibida: %d\n", senal);
+    exit(0);
+}
+
+// Función para crear un daemon
+void daemonize() {
+    pid_t pid = fork();
+    if (pid < 0) {
+        exit(EXIT_FAILURE);
+    }
+    if (pid > 0) {
+        exit(EXIT_SUCCESS);
+    }
+    if (setsid() < 0) {
+        exit(EXIT_FAILURE);
+    }
+    signal(SIGCHLD, SIG_IGN);
+    signal(SIGHUP, SIG_IGN);
+    pid = fork();
+    if (pid < 0) {
+        exit(EXIT_FAILURE);
+    }
+    if (pid > 0) {
+        exit(EXIT_SUCCESS);
+    }
+    umask(0);
+    chdir("/");
+    close(STDIN_FILENO);
+    close(STDOUT_FILENO);
+    close(STDERR_FILENO);
+}
+
+// Función principal
+int main() {
+    // Crear un nuevo proceso
+    pid_t pid = fork();
+    if (pid == 0) {
+        printf("Soy el proceso hijo.\n");
+    } else if (pid > 0) {
+        printf("Soy el proceso padre.\n");
+    } else {
+        printf("Error al crear el proceso hijo.\n");
+        return 1;
+    }
+
+    // Manipulación de archivos
+    int fd = open("nuevo_archivo.txt", O_CREAT | O_WRONLY, 0644);
+    if (fd == -1) {
+        printf("Error al crear el archivo.\n");
+        return 1;
+    }
+    close(fd);
+
+    // Lectura y escritura de archivos
+    fd = open("archivo.txt", O_RDONLY);
+    if (fd == -1) {
+        printf("Error al abrir el archivo.\n");
+        return 1;
+    }
+    char buffer[100];
+    ssize_t bytes_leidos = read(fd, buffer, sizeof(buffer));
+    if (bytes_leidos == -1) {
+        printf("Error al leer el archivo.\n");
+        close(fd);
+        return 1;
+    }
+    close(fd);
+    printf("Contenido del archivo: %s\n", buffer);
+
+    // Manipulación de directorios
+    if (mkdir("nuevo_directorio", 0755) == -1) {
+        printf("Error al crear el directorio.\n");
+        return 1;
+    }
+    if (rmdir("nuevo_directorio") == -1) {
+        printf("Error al eliminar el directorio.\n");
+        return 1;
+    }
+
+    // Manejo de señales
+    signal(SIGINT, manejador_senal);
+    printf("Presiona Ctrl+C para enviar una señal.\n");
+    while (1) {
+        sleep(1);
+    }
+
+    // Creación de un daemon
+    daemonize();
+    while (1) {
+        sleep(1);
+    }
+
+    return 0;
+}
+Explicación Extensa
+Programación de Sistemas en C
+La programación de sistemas en C implica el uso de llamadas al sistema para interactuar directamente con el sistema operativo. Esto permite un control detallado sobre los recursos del sistema, como archivos, directorios, procesos y señales. La programación de sistemas es esencial para desarrollar aplicaciones que requieren un alto nivel de control sobre el entorno operativo.
+Uso de Llamadas al Sistema en C
+1.	Creación de un Nuevo Proceso: Uso de fork para crear un nuevo proceso.
+pid_t pid = fork();
+if (pid == 0) {
+    printf("Soy el proceso hijo.\n");
+} else if (pid > 0) {
+    printf("Soy el proceso padre.\n");
+} else {
+    printf("Error al crear el proceso hijo.\n");
+    return 1;
+}
+2.	Manipulación de Archivos:
+o	Creación de Archivos: Uso de open con la bandera O_CREAT.
+int fd = open("nuevo_archivo.txt", O_CREAT | O_WRONLY, 0644);
+if (fd == -1) {
+    printf("Error al crear el archivo.\n");
+    return 1;
+}
+close(fd);
+o	Lectura y Escritura de Archivos: Uso de read y write.
+fd = open("archivo.txt", O_RDONLY);
+if (fd == -1) {
+    printf("Error al abrir el archivo.\n");
+    return 1;
+}
+char buffer[100];
+ssize_t bytes_leidos = read(fd, buffer, sizeof(buffer));
+if (bytes_leidos == -1) {
+    printf("Error al leer el archivo.\n");
+    close(fd);
+    return 1;
+}
+close(fd);
+printf("Contenido del archivo: %s\n", buffer);
+3.	Manipulación de Directorios:
+o	Creación de Directorios: Uso de mkdir.
+if (mkdir("nuevo_directorio", 0755) == -1) {
+    printf("Error al crear el directorio.\n");
+    return 1;
+}
+o	Eliminación de Directorios: Uso de rmdir.
+if (rmdir("nuevo_directorio") == -1) {
+    printf("Error al eliminar el directorio.\n");
+    return 1;
+}
+Uso de Señales y Manejo de Procesos
+1.	Envío de Señales: Uso de kill para enviar señales a procesos.
+2.	Manejo de Señales: Uso de signal para manejar señales.
+void manejador_senal(int senal) {
+    printf("Señal recibida: %d\n", senal);
+    exit(0);
+}
+
+signal(SIGINT, manejador_senal);
+printf("Presiona Ctrl+C para enviar una señal.\n");
+while (1) {
+    sleep(1);
+}
+Creación de un Daemon
+Un daemon es un proceso que se ejecuta en segundo plano y no tiene una terminal asociada. Se utiliza para tareas de fondo, como servicios del sistema.
+void daemonize() {
+    pid_t pid = fork();
+    if (pid < 0) {
+        exit(EXIT_FAILURE);
+    }
+    if (pid > 0) {
+        exit(EXIT_SUCCESS);
+    }
+    if (setsid() < 0) {
+        exit(EXIT_FAILURE);
+    }
+    signal(SIGCHLD, SIG_IGN);
+    signal(SIGHUP, SIG_IGN);
+    pid = fork();
+    if (pid < 0) {
+        exit(EXIT_FAILURE);
+    }
+    if (pid > 0) {
+        exit(EXIT_SUCCESS);
+    }
+    umask(0);
+    chdir("/");
+    close(STDIN_FILENO);
+    close(STDOUT_FILENO);
+    close(STDERR_FILENO);
+}
+
+daemonize();
+while (1) {
+    sleep(1);
+}
+Conclusiones
+La programación de sistemas en C es una técnica poderosa que permite un control detallado sobre el sistema operativo y sus recursos. A través de llamadas al sistema, se pueden crear y gestionar procesos, manipular archivos y directorios, y manejar señales. La creación de daemons es una técnica útil para ejecutar tareas en segundo plano sin una terminal asociada. El conocimiento y la habilidad para utilizar estas técnicas son fundamentales para cualquier programador que desee desarrollar aplicaciones que interactúen directamente con el sistema operativo y requieran un alto nivel de control sobre los recursos del sistema.
+
+
+Código Fuente de Ejemplo para el Tema 26: Introducción a la Programación de Redes en C
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+
+#define PORT 12345
+#define BUFFER_SIZE 1024
+
+// Función para manejar el servidor TCP
+void servidor_tcp() {
+    int sockfd, newsockfd;
+    struct sockaddr_in server_addr, client_addr;
+    socklen_t client_len = sizeof(client_addr);
+    char buffer[BUFFER_SIZE];
+
+    // Crear socket
+    sockfd = socket(AF_INET, SOCK_STREAM, 0);
+    if (sockfd < 0) {
+        perror("Error al crear el socket");
+        exit(1);
+    }
+
+    // Configurar dirección del servidor
+    memset(&server_addr, 0, sizeof(server_addr));
+    server_addr.sin_family = AF_INET;
+    server_addr.sin_addr.s_addr = INADDR_ANY;
+    server_addr.sin_port = htons(PORT);
+
+    // Enlazar socket a la dirección del servidor
+    if (bind(sockfd, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
+        perror("Error al enlazar el socket");
+        close(sockfd);
+        exit(1);
+    }
+
+    // Escuchar conexiones
+    if (listen(sockfd, 5) < 0) {
+        perror("Error al escuchar conexiones");
+        close(sockfd);
+        exit(1);
+    }
+
+    printf("Servidor TCP escuchando en el puerto %d...\n", PORT);
+
+    // Aceptar conexión
+    newsockfd = accept(sockfd, (struct sockaddr *)&client_addr, &client_len);
+    if (newsockfd < 0) {
+        perror("Error al aceptar la conexión");
+        close(sockfd);
+        exit(1);
+    }
+
+    printf("Cliente conectado desde %s:%d\n", inet_ntoa(client_addr.sin_addr), ntohs(client_addr.sin_port));
+
+    // Leer datos del cliente
+    memset(buffer, 0, BUFFER_SIZE);
+    int n = read(newsockfd, buffer, BUFFER_SIZE - 1);
+    if (n < 0) {
+        perror("Error al leer desde el socket");
+        close(newsockfd);
+        close(sockfd);
+        exit(1);
+    }
+
+    printf("Mensaje recibido: %s\n", buffer);
+
+    // Enviar respuesta al cliente
+    n = write(newsockfd, "Mensaje recibido", 16);
+    if (n < 0) {
+        perror("Error al escribir en el socket");
+        close(newsockfd);
+        close(sockfd);
+        exit(1);
+    }
+
+    // Cerrar conexiones
+    close(newsockfd);
+    close(sockfd);
+}
+
+// Función para manejar el cliente TCP
+void cliente_tcp() {
+    int sockfd;
+    struct sockaddr_in server_addr;
+    char buffer[BUFFER_SIZE];
+
+    // Crear socket
+    sockfd = socket(AF_INET, SOCK_STREAM, 0);
+    if (sockfd < 0) {
+        perror("Error al crear el socket");
+        exit(1);
+    }
+
+    // Configurar dirección del servidor
+    memset(&server_addr, 0, sizeof(server_addr));
+    server_addr.sin_family = AF_INET;
+    server_addr.sin_port = htons(PORT);
+    if (inet_pton(AF_INET, "127.0.0.1", &server_addr.sin_addr) <= 0) {
+        perror("Error al convertir la dirección IP");
+        close(sockfd);
+        exit(1);
+    }
+
+    // Conectar al servidor
+    if (connect(sockfd, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
+        perror("Error al conectar al servidor");
+        close(sockfd);
+        exit(1);
+    }
+
+    printf("Conectado al servidor TCP en el puerto %d\n", PORT);
+
+    // Enviar mensaje al servidor
+    int n = write(sockfd, "Hola servidor", 13);
+    if (n < 0) {
+        perror("Error al escribir en el socket");
+        close(sockfd);
+        exit(1);
+    }
+
+    // Leer respuesta del servidor
+    memset(buffer, 0, BUFFER_SIZE);
+    n = read(sockfd, buffer, BUFFER_SIZE - 1);
+    if (n < 0) {
+        perror("Error al leer desde el socket");
+        close(sockfd);
+        exit(1);
+    }
+
+    printf("Respuesta del servidor: %s\n", buffer);
+
+    // Cerrar conexión
+    close(sockfd);
+}
+
+// Función principal
+int main() {
+    // Ejecutar servidor TCP
+    servidor_tcp();
+
+    // Ejecutar cliente TCP
+    cliente_tcp();
+
+    return 0;
+}
+
+Explicación Extensa
+Introducción a la Programación de Redes en C
+La programación de redes en C permite la comunicación entre dispositivos a través de redes de computadoras. Esto se logra utilizando sockets, que son interfaces de programación de aplicaciones (API) para la comunicación en red. En este ejemplo, se muestra cómo crear un servidor y un cliente TCP utilizando sockets en C.
+Conceptos Básicos de Redes
+1.	Definición: Comunicación entre dispositivos a través de redes de computadoras.
+2.	Protocolos de Red: Conjunto de reglas y convenciones para la comunicación.
+3.	Modelo OSI: Capas de comunicación (Física, Enlace de Datos, Red, Transporte, Sesión, Presentación, Aplicación).
+4.	Modelo TCP/IP: Simplificación del modelo OSI (Red, Transporte, Aplicación).
+Uso de Sockets en C
+1.	Definición: Interfaz de programación de aplicaciones (API) para la comunicación en red.
+2.	Tipos de Sockets:
+o	Socket de Flujo (SOCK_STREAM): Basado en TCP, conexión orientada, confiable.
+o	Socket de Datagrama (SOCK_DGRAM): Basado en UDP, conexión no orientada, no confiable.
+3.	Creación de un Socket: Uso de socket.
+int sockfd = socket(AF_INET, SOCK_STREAM, 0);
+Programación de un Servidor TCP
+1.	Enlace de un Socket: Uso de bind.
+if (bind(sockfd, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
+    perror("Error al enlazar el socket");
+    close(sockfd);
+    exit(1);
+}
+2.	Escucha de Conexiones: Uso de listen.
+if (listen(sockfd, 5) < 0) {
+    perror("Error al escuchar conexiones");
+    close(sockfd);
+    exit(1);
+}
+3.	Aceptación de Conexiones: Uso de accept.
+newsockfd = accept(sockfd, (struct sockaddr *)&client_addr, &client_len);
+4.	Lectura y Escritura de Datos: Uso de read y write.
+int n = read(newsockfd, buffer, BUFFER_SIZE - 1);
+n = write(newsockfd, "Mensaje recibido", 16);
+Programación de un Cliente TCP
+1.	Conexión a un Servidor: Uso de connect.
+if (connect(sockfd, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
+    perror("Error al conectar al servidor");
+    close(sockfd);
+    exit(1);
+}
+2.	Envío y Recepción de Datos: Uso de write y read.
+int n = write(sockfd, "Hola servidor", 13);
+n = read(sockfd, buffer, BUFFER_SIZE - 1);
+Ejemplos Prácticos
+En el código fuente proporcionado, se demuestran estas funcionalidades:
+1.	Servidor TCP: Se crea un servidor que escucha en un puerto específico, acepta conexiones de clientes, recibe mensajes y envía respuestas.
+void servidor_tcp() {
+    int sockfd, newsockfd;
+    struct sockaddr_in server_addr, client_addr;
+    socklen_t client_len = sizeof(client_addr);
+    char buffer[BUFFER_SIZE];
+
+    // Crear socket, enlazar, escuchar, aceptar, leer y escribir datos
+    // ...
+}
+2.	Cliente TCP: Se crea un cliente que se conecta a un servidor, envía un mensaje y recibe una respuesta.
+void cliente_tcp() {
+    int sockfd;
+    struct sockaddr_in server_addr;
+    char buffer[BUFFER_SIZE];
+
+    // Crear socket, configurar dirección del servidor, conectar, escribir y leer datos
+    // ...
+}
+Conclusiones
+La programación de redes en C, utilizando sockets, es una técnica poderosa para desarrollar aplicaciones que requieren comunicación a través de redes de computadoras. A través de sockets, se pueden crear servidores y clientes que interactúan de manera eficiente y confiable. El conocimiento y la habilidad para utilizar estas técnicas son fundamentales para cualquier programador que desee desarrollar aplicaciones que interactúen con redes de computadoras.
+
+Código Fuente de Ejemplo para el Tema 27: Introducción a la Programación de Interfaces Gráficas (GUI) en C
+#include <gtk/gtk.h>
+
+// Función de callback para el botón
+void on_button_clicked(GtkWidget *widget, gpointer data) {
+    g_print("Botón clickeado\n");
+}
+
+// Función principal
+int main(int argc, char *argv[]) {
+    // Inicializar GTK
+    gtk_init(&argc, &argv);
+
+    // Crear una ventana
+    GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+    gtk_window_set_title(GTK_WINDOW(window), "Mi Ventana");
+    gtk_window_set_default_size(GTK_WINDOW(window), 400, 300);
+    g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
+
+    // Crear un botón
+    GtkWidget *button = gtk_button_new_with_label("Haz clic");
+    gtk_container_add(GTK_CONTAINER(window), button);
+    g_signal_connect(button, "clicked", G_CALLBACK(on_button_clicked), NULL);
+
+    // Mostrar la ventana y todos sus widgets
+    gtk_widget_show_all(window);
+
+    // Iniciar el bucle de eventos de GTK
+    gtk_main();
+
+    return 0;
+}
+Explicación Extensa
+Introducción a la Programación de Interfaces Gráficas (GUI) en C
+La programación de interfaces gráficas (GUI) en C permite crear aplicaciones con una interfaz visual que interactúa con el usuario. GTK es una biblioteca multiplataforma que facilita la creación de interfaces gráficas en C. En este ejemplo, se muestra cómo crear una ventana simple con un botón utilizando GTK.
+Uso de Bibliotecas para Crear Interfaces Gráficas
+1.	GTK: Biblioteca multiplataforma para crear interfaces gráficas.
+o	Instalación:
+sudo apt-get install libgtk-3-dev
+o	Inclusión de la Biblioteca:
+#include <gtk/gtk.h>
+Creación de Interfaces Gráficas Simples con GTK
+1.	Inicialización de GTK: Uso de gtk_init.
+gtk_init(&argc, &argv);
+2.	Creación de una Ventana: Uso de gtk_window_new.
+GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+gtk_window_set_title(GTK_WINDOW(window), "Mi Ventana");
+gtk_window_set_default_size(GTK_WINDOW(window), 400, 300);
+g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
+3.	Añadir un Botón: Uso de gtk_button_new_with_label.
+GtkWidget *button = gtk_button_new_with_label("Haz clic");
+gtk_container_add(GTK_CONTAINER(window), button);
+g_signal_connect(button, "clicked", G_CALLBACK(on_button_clicked), NULL);
+4.	Mostrar la Ventana: Uso de gtk_widget_show_all.
+gtk_widget_show_all(window);
+5.	Iniciar el Bucle de Eventos de GTK: Uso de gtk_main.
+gtk_main();
+Componentes Básicos de una GUI
+1.	Ventanas: Contenedores principales para la interfaz gráfica.
+2.	Botones: Elementos interactivos que realizan acciones al hacer clic.
+3.	Etiquetas: Elementos para mostrar texto estático.
+4.	Cajas de Texto: Elementos para ingresar texto.
+5.	Menús: Elementos para desplegar opciones.
+6.	Barras de Herramientas: Elementos para acciones comunes.
+Ejemplos Prácticos
+En el código fuente proporcionado, se demuestran estas funcionalidades:
+1.	Crear una Ventana: Se crea una ventana con un título y un tamaño específico.
+GtkWidget *window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
+gtk_window_set_title(GTK_WINDOW(window), "Mi Ventana");
+gtk_window_set_default_size(GTK_WINDOW(window), 400, 300);
+g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
+2.	Añadir un Botón: Se crea un botón con un texto y se añade a la ventana.
+GtkWidget *button = gtk_button_new_with_label("Haz clic");
+gtk_container_add(GTK_CONTAINER(window), button);
+g_signal_connect(button, "clicked", G_CALLBACK(on_button_clicked), NULL);
+3.	Mostrar la Ventana y sus Widgets: Se muestra la ventana y todos sus widgets.
+gtk_widget_show_all(window);
+4.	Iniciar el Bucle de Eventos de GTK: Se inicia el bucle de eventos de GTK para manejar las interacciones del usuario.
+gtk_main();
+Conclusiones
+La programación de interfaces gráficas (GUI) en C utilizando bibliotecas como GTK es una técnica poderosa para crear aplicaciones con una interfaz visual que interactúa con el usuario. A través de GTK, se pueden crear ventanas, añadir botones y otros componentes básicos, y manejar eventos como clics de botones. El conocimiento y la habilidad para utilizar estas técnicas son fundamentales para cualquier programador que desee desarrollar aplicaciones con interfaces gráficas.
+
+
+Código Fuente de Ejemplo para el Tema 28: Depuración y Optimización de Código en C
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+// Función no optimizada para calcular la suma de cuadrados
+int suma_cuadrados(int n) {
+    int suma = 0;
+    for (int i = 1; i <= n; i++) {
+        suma += i * i;
+    }
+    return suma;
+}
+
+// Función optimizada para calcular la suma de cuadrados
+int suma_cuadrados_opt(int n) {
+    int suma = 0;
+    int i = 1;
+    while (i <= n) {
+        suma += i * i;
+        i++;
+    }
+    return suma;
+}
+
+// Función principal
+int main() {
+    // Medir el tiempo de ejecución de la función no optimizada
+    clock_t inicio = clock();
+    int resultado = suma_cuadrados(1000000);
+    clock_t fin = clock();
+    double tiempo_no_optimizado = (double)(fin - inicio) / CLOCKS_PER_SEC;
+    printf("Resultado no optimizado: %d\n", resultado);
+    printf("Tiempo no optimizado: %f segundos\n", tiempo_no_optimizado);
+
+    // Medir el tiempo de ejecución de la función optimizada
+    inicio = clock();
+    resultado = suma_cuadrados_opt(1000000);
+    fin = clock();
+    double tiempo_optimizado = (double)(fin - inicio) / CLOCKS_PER_SEC;
+    printf("Resultado optimizado: %d\n", resultado);
+    printf("Tiempo optimizado: %f segundos\n", tiempo_optimizado);
+
+    return 0;
+}
+Explicación Extensa
+Depuración y Optimización de Código en C
+La depuración y optimización de código son procesos esenciales para garantizar la robustez y eficiencia de las aplicaciones. La depuración implica encontrar y corregir errores en el código, mientras que la optimización busca mejorar el rendimiento y la eficiencia del código. En este ejemplo, se muestra cómo medir el tiempo de ejecución de una función no optimizada y una función optimizada, y cómo utilizar herramientas como gdb y valgrind para depurar y optimizar el código.
+Uso de Herramientas de Depuración (gdb)
+1.	Instalación de gdb:
+sudo apt-get install gdb
+2.	Compilación con Símbolos de Depuración:
+gcc -g -o programa programa.c
+3.	Inicio de gdb:
+gdb programa
+4.	Comandos Básicos de gdb:
+o	run: Ejecuta el programa.
+o	break: Establece un punto de interrupción.
+o	next: Ejecuta la siguiente línea de código.
+o	step: Entra en una función.
+o	continue: Continúa la ejecución hasta el siguiente punto de interrupción.
+o	print: Muestra el valor de una variable.
+o	backtrace: Muestra la pila de llamadas.
+o	quit: Sale de gdb.
+Técnicas de Optimización de Código
+1.	Optimización de Bucles: Reducir operaciones innecesarias.
+int suma_cuadrados_opt(int n) {
+    int suma = 0;
+    int i = 1;
+    while (i <= n) {
+        suma += i * i;
+        i++;
+    }
+    return suma;
+}
+2.	Uso Eficiente de Memoria: Evitar asignaciones innecesarias y liberar memoria cuando ya no se necesita.
+int *ptr = (int *)malloc(sizeof(int) * n);
+// Uso de ptr
+free(ptr);
+3.	Optimización de Funciones: Reducir el número de llamadas a funciones costosas.
+int suma(int a, int b) {
+    return a + b;
+}
+int resultado = suma(5, 3);
+4.	Uso de Algoritmos Eficientes: Elegir algoritmos con menor complejidad computacional.
+// Búsqueda lineal O(n)
+int buscar(int arr[], int n, int x) {
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == x) return i;
+    }
+    return -1;
+}
+
+// Búsqueda binaria O(log n)
+int buscar_binario(int arr[], int l, int r, int x) {
+    if (r >= l) {
+        int mid = l + (r - l) / 2;
+        if (arr[mid] == x) return mid;
+        if (arr[mid] > x) return buscar_binario(arr, l, mid - 1, x);
+        return buscar_binario(arr, mid + 1, r, x);
+    }
+    return -1;
+}
+Análisis de Rendimiento
+1.	Uso de time: Mide el tiempo de ejecución de un programa.
+time ./programa
+2.	Uso de valgrind: Herramienta para detectar fugas de memoria y errores de acceso a memoria.
+valgrind --leak-check=full ./programa
+3.	Uso de perf: Herramienta para analizar el rendimiento del sistema.
+perf stat ./programa
+Ejemplos Prácticos
+En el código fuente proporcionado, se demuestran estas funcionalidades:
+1.	Medir el Tiempo de Ejecución: Se mide el tiempo de ejecución de una función no optimizada y una función optimizada utilizando la biblioteca time.h.
+clock_t inicio = clock();
+int resultado = suma_cuadrados(1000000);
+clock_t fin = clock();
+double tiempo_no_optimizado = (double)(fin - inicio) / CLOCKS_PER_SEC;
+printf("Resultado no optimizado: %d\n", resultado);
+printf("Tiempo no optimizado: %f segundos\n", tiempo_no_optimizado);
+2.	Optimización de Bucles: Se optimiza una función que calcula la suma de cuadrados utilizando un bucle while en lugar de un bucle for.
+int suma_cuadrados_opt(int n) {
+    int suma = 0;
+    int i = 1;
+    while (i <= n) {
+        suma += i * i;
+        i++;
+    }
+    return suma;
+}
+Conclusiones
+La depuración y optimización de código en C son procesos esenciales para garantizar la robustez y eficiencia de las aplicaciones. A través de herramientas como gdb, valgrind, y perf, se pueden encontrar y corregir errores, detectar fugas de memoria, y analizar el rendimiento del sistema. Las técnicas de optimización, como la reducción de operaciones innecesarias, el uso eficiente de memoria, y la elección de algoritmos eficientes, son fundamentales para mejorar el rendimiento de las aplicaciones. El conocimiento y la habilidad para utilizar estas técnicas son esenciales para cualquier programador que desee desarrollar aplicaciones eficientes y robustas.
+
+
+Código Fuente de Ejemplo para el Tema 29: Depuración y Optimización de Código en C
+.h>
+#include <stdlib.h>
+#include <time.h>
+
+// Función no optimizada para calcular la suma de cuadrados
+int suma_cuadrados(int n) {
+    int suma = 0;
+    for (int i = 1; i <= n; i++) {
+        suma += i * i;
+    }
+    return suma;
+}
+
+// Función optimizada para calcular la suma de cuadrados
+int suma_cuadrados_opt(int n) {
+    int suma = 0;
+    int i = 1;
+    while (i <= n) {
+        suma += i * i;
+        i++;
+    }
+    return suma;
+}
+
+// Función principal
+int main() {
+    // Medir el tiempo de ejecución de la función no optimizada
+    clock_t inicio = clock();
+    int resultado = suma_cuadrados(1000000);
+    clock_t fin = clock();
+    double tiempo_no_optimizado = (double)(fin - inicio) / CLOCKS_PER_SEC;
+    printf("Resultado no optimizado: %d\n", resultado);
+    printf("Tiempo no optimizado: %f segundos\n", tiempo_no_optimizado);
+
+    // Medir el tiempo de ejecución de la función optimizada
+    inicio = clock();
+    resultado = suma_cuadrados_opt(1000000);
+    fin = clock();
+    double tiempo_optimizado = (double)(fin - inicio) / CLOCKS_PER_SEC;
+    printf("Resultado optimizado: %d\n", resultado);
+    printf("Tiempo optimizado: %f segundos\n", tiempo_optimizado);
+
+    return 0;
+}
+Explicación Extensa
+Depuración y Optimización de Código en C
+La depuración y optimización de código son procesos esenciales para garantizar la robustez y eficiencia de las aplicaciones. La depuración implica encontrar y corregir errores en el código, mientras que la optimización busca mejorar el rendimiento y la eficiencia del código. En este ejemplo, se muestra cómo medir el tiempo de ejecución de una función no optimizada y una función optimizada, y cómo utilizar herramientas como gdb y valgrind para depurar y optimizar el código.
+Uso de Herramientas de Depuración (gdb)
+1.	Instalación de gdb:
+sudo apt-get install gdb
+2.	Compilación con Símbolos de Depuración:
+gcc -g -o programa programa.c
+3.	Inicio de gdb:
+gdb programa
+4.	Comandos Básicos de gdb:
+o	run: Ejecuta el programa.
+o	break: Establece un punto de interrupción.
+o	next: Ejecuta la siguiente línea de código.
+o	step: Entra en una función.
+o	continue: Continúa la ejecución hasta el siguiente punto de interrupción.
+o	print: Muestra el valor de una variable.
+o	backtrace: Muestra la pila de llamadas.
+o	quit: Sale de gdb.
+Técnicas de Optimización de Código
+1.	Optimización de Bucles: Reducir operaciones innecesarias.
+int suma_cuadrados_opt(int n) {
+    int suma = 0;
+    int i = 1;
+    while (i <= n) {
+        suma += i * i;
+        i++;
+    }
+    return suma;
+}
+2.	Uso Eficiente de Memoria: Evitar asignaciones innecesarias y liberar memoria cuando ya no se necesita.
+int *ptr = (int *)malloc(sizeof(int) * n);
+// Uso de ptr
+free(ptr);
+3.	Optimización de Funciones: Reducir el número de llamadas a funciones costosas.
+int suma(int a, int b) {
+    return a + b;
+}
+int resultado = suma(5, 3);
+4.	Uso de Algoritmos Eficientes: Elegir algoritmos con menor complejidad computacional.
+// Búsqueda lineal O(n)
+int buscar(int arr[], int n, int x) {
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == x) return i;
+    }
+    return -1;
+}
+
+// Búsqueda binaria O(log n)
+int buscar_binario(int arr[], int l, int r, int x) {
+    if (r >= l) {
+        int mid = l + (r - l) / 2;
+        if (arr[mid] == x) return mid;
+        if (arr[mid] > x) return buscar_binario(arr, l, mid - 1, x);
+        return buscar_binario(arr, mid + 1, r, x);
+    }
+    return -1;
+}
+Análisis de Rendimiento
+1.	Uso de time: Mide el tiempo de ejecución de un programa.
+time ./programa
+2.	Uso de valgrind: Herramienta para detectar fugas de memoria y errores de acceso a memoria.
+valgrind --leak-check=full ./programa
+3.	Uso de perf: Herramienta para analizar el rendimiento del sistema.
+perf stat ./programa
+Ejemplos Prácticos
+En el código fuente proporcionado, se demuestran estas funcionalidades:
+1.	Medir el Tiempo de Ejecución: Se mide el tiempo de ejecución de una función no optimizada y una función optimizada utilizando la biblioteca time.h.
+clock_t inicio = clock();
+int resultado = suma_cuadrados(1000000);
+clock_t fin = clock();
+double tiempo_no_optimizado = (double)(fin - inicio) / CLOCKS_PER_SEC;
+printf("Resultado no optimizado: %d\n", resultado);
+printf("Tiempo no optimizado: %f segundos\n", tiempo_no_optimizado);
+2.	Optimización de Bucles: Se optimiza una función que calcula la suma de cuadrados utilizando un bucle while en lugar de un bucle for.
+int suma_cuadrados_opt(int n) {
+    int suma = 0;
+    int i = 1;
+    while (i <= n) {
+        suma += i * i;
+        i++;
+    }
+    return suma;
+}
+Conclusiones
+La depuración y optimización de código en C son procesos esenciales para garantizar la robustez y eficiencia de las aplicaciones. A través de herramientas como gdb, valgrind, y perf, se pueden encontrar y corregir errores, detectar fugas de memoria, y analizar el rendimiento del sistema. Las técnicas de optimización, como la reducción de operaciones innecesarias, el uso eficiente de memoria, y la elección de algoritmos eficientes, son fundamentales para mejorar el rendimiento de las aplicaciones. El conocimiento y la habilidad para utilizar estas técnicas son esenciales para cualquier programador que desee desarrollar aplicaciones eficientes y robustas.
+
+Código Fuente de Ejemplo para el Tema 30: Depuración y Optimización de Código en C
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+// Función no optimizada para calcular la suma de cuadrados
+int suma_cuadrados(int n) {
+    int suma = 0;
+    for (int i = 1; i <= n; i++) {
+        suma += i * i;
+    }
+    return suma;
+}
+
+// Función optimizada para calcular la suma de cuadrados
+int suma_cuadrados_opt(int n) {
+    int suma = 0;
+    int i = 1;
+    while (i <= n) {
+        suma += i * i;
+        i++;
+    }
+    return suma;
+}
+
+// Función principal
+int main() {
+    // Medir el tiempo de ejecución de la función no optimizada
+    clock_t inicio = clock();
+    int resultado = suma_cuadrados(1000000);
+    clock_t fin = clock();
+    double tiempo_no_optimizado = (double)(fin - inicio) / CLOCKS_PER_SEC;
+    printf("Resultado no optimizado: %d\n", resultado);
+    printf("Tiempo no optimizado: %f segundos\n", tiempo_no_optimizado);
+
+    // Medir el tiempo de ejecución de la función optimizada
+    inicio = clock();
+    resultado = suma_cuadrados_opt(1000000);
+    fin = clock();
+    double tiempo_optimizado = (double)(fin - inicio) / CLOCKS_PER_SEC;
+    printf("Resultado optimizado: %d\n", resultado);
+    printf("Tiempo optimizado: %f segundos\n", tiempo_optimizado);
+
+    return 0;
+}
+Explicación Extensa
+Depuración y Optimización de Código en C
+La depuración y optimización de código son procesos esenciales para garantizar la robustez y eficiencia de las aplicaciones. La depuración implica encontrar y corregir errores en el código, mientras que la optimización busca mejorar el rendimiento y la eficiencia del código. En este ejemplo, se muestra cómo medir el tiempo de ejecución de una función no optimizada y una función optimizada, y cómo utilizar herramientas como gdb y valgrind para depurar y optimizar el código.
+Uso de Herramientas de Depuración (gdb)
+1.	Instalación de gdb:
+sudo apt-get install gdb
+2.	Compilación con Símbolos de Depuración:
+gcc -g -o programa programa.c
+3.	Inicio de gdb:
+gdb programa
+4.	Comandos Básicos de gdb:
+o	run: Ejecuta el programa.
+o	break: Establece un punto de interrupción.
+o	next: Ejecuta la siguiente línea de código.
+o	step: Entra en una función.
+o	continue: Continúa la ejecución hasta el siguiente punto de interrupción.
+o	print: Muestra el valor de una variable.
+o	backtrace: Muestra la pila de llamadas.
+o	quit: Sale de gdb.
+Técnicas de Optimización de Código
+1.	Optimización de Bucles: Reducir operaciones innecesarias.
+int suma_cuadrados_opt(int n) {
+    int suma = 0;
+    int i = 1;
+    while (i <= n) {
+        suma += i * i;
+        i++;
+    }
+    return suma;
+}
+2.	Uso Eficiente de Memoria: Evitar asignaciones innecesarias y liberar memoria cuando ya no se necesita.
+int *ptr = (int *)malloc(sizeof(int) * n);
+// Uso de ptr
+free(ptr);
+3.	Optimización de Funciones: Reducir el número de llamadas a funciones costosas.
+int suma(int a, int b) {
+    return a + b;
+}
+int resultado = suma(5, 3);
+4.	Uso de Algoritmos Eficientes: Elegir algoritmos con menor complejidad computacional.
+// Búsqueda lineal O(n)
+int buscar(int arr[], int n, int x) {
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == x) return i;
+    }
+    return -1;
+}
+
+// Búsqueda binaria O(log n)
+int buscar_binario(int arr[], int l, int r, int x) {
+    if (r >= l) {
+        int mid = l + (r - l) / 2;
+        if (arr[mid] == x) return mid;
+        if (arr[mid] > x) return buscar_binario(arr, l, mid - 1, x);
+        return buscar_binario(arr, mid + 1, r, x);
+    }
+    return -1;
+}
+Análisis de Rendimiento
+1.	Uso de time: Mide el tiempo de ejecución de un programa.
+time ./programa
+2.	Uso de valgrind: Herramienta para detectar fugas de memoria y errores de acceso a memoria.
+valgrind --leak-check=full ./programa
+3.	Uso de perf: Herramienta para analizar el rendimiento del sistema.
+perf stat ./programa
+Ejemplos Prácticos
+En el código fuente proporcionado, se demuestran estas funcionalidades:
+1.	Medir el Tiempo de Ejecución: Se mide el tiempo de ejecución de una función no optimizada y una función optimizada utilizando la biblioteca time.h.
+clock_t inicio = clock();
+int resultado = suma_cuadrados(1000000);
+clock_t fin = clock();
+double tiempo_no_optimizado = (double)(fin - inicio) / CLOCKS_PER_SEC;
+printf("Resultado no optimizado: %d\n", resultado);
+printf("Tiempo no optimizado: %f segundos\n", tiempo_no_optimizado);
+2.	Optimización de Bucles: Se optimiza una función que calcula la suma de cuadrados utilizando un bucle while en lugar de un bucle for.
+int suma_cuadrados_opt(int n) {
+    int suma = 0;
+    int i = 1;
+    while (i <= n) {
+        suma += i * i;
+        i++;
+    }
+    return suma;
+}
+Conclusiones
+La depuración y optimización de código en C son procesos esenciales para garantizar la robustez y eficiencia de las aplicaciones. A través de herramientas como gdb, valgrind, y perf, se pueden encontrar y corregir errores, detectar fugas de memoria, y analizar el rendimiento del sistema. Las técnicas de optimización, como la reducción de operaciones innecesarias, el uso eficiente de memoria, y la elección de algoritmos eficientes, son fundamentales para mejorar el rendimiento de las aplicaciones. El conocimiento y la habilidad para utilizar estas técnicas son esenciales para cualquier programador que desee desarrollar aplicaciones eficientes y robustas.

@@ -1,0 +1,9 @@
+*.pdf
+*.qmd
+*.html
+build/
+Notas*/
+Notas*
+.DS_*
+.vscode/
+.idea/

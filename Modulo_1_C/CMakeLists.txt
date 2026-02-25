@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 4.1)
+project(Modulo_1_C C)
+
+set(CMAKE_C_STANDARD 17)
+
+add_executable(ejercicio_1 ejercicio_1.c
+        ejercicio_8.c
+        ejercicio_9.c
+        ejercicio_10.c
+        ejercicio_11.c
+        ejercicio_12.c)
+add_executable(ejercicio_2 ejercicio_2.c)
+add_executable(ejercicio_3 ejercicio_3.c)
+add_executable(hola_mundo hola_mundo.c)
+add_executable(ejercicio_4 ejercicio_4.c)
+add_executable(ejercicio_5 ejercicio_5.c)
+add_executable(ejercicio_6 ejercicio_6.c)
+add_executable(ejercicio_7 ejercicio_7.c)
+add_executable(ejercicio_8 ejercicio_8.c)
+add_executable(ejercicio_9 ejercicio_9.c)
+add_executable(ejercicio_10 ejercicio_10.c)
+add_executable(ejercicio_11 ejercicio_11.c)
+add_executable(ejercicio_12 ejercicio_12.c)
