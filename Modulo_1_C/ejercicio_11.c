@@ -10,6 +10,29 @@
 
 #include <stdio.h>  // Incluir la biblioteca estándar de entrada y salida
 #include <string.h>  // Incluir la biblioteca estándar de manipulación de cadenas
+#include <stdlib.h> //
+
+void print_separator(char character, int count) {
+    for (int i = 0; i < count; i++) {
+        printf("%c", character);
+    }
+    printf("\n");
+}
+
+// definicion de la funcion
+char* cadena_repetida(char character, int count) {
+    // destinar memoria
+    char* destination = malloc((count + 1) * sizeof(char));
+    // check seguridad
+    if (destination == NULL) return NULL;
+    // concatenar la cadena
+    for (int i = 0; i < count; i++) {
+        destination[i] = character;
+    }
+    destination[count] = '\n';
+    destination[count+1] = '\0'; // terminar la cadena
+    return destination; // devolver la cadena
+}
 
 int main() {
     // Declaración y manipulación de cadenas
@@ -28,10 +51,14 @@ int main() {
 
     // Obtener la longitud de una cadena
     int longitud = strlen(cadena3);
+    int longitud2 = strlen("Longitud de la cadena: ");
+    print_separator('=', longitud + longitud2);
     printf("Longitud de la cadena: %d\n", longitud);
+    printf("-Cadena concatenada 3: %s\n", cadena3);
 
     // Comparar cadenas
     int comparacion = strcmp(cadena1, cadena2);
+    print_separator('=', 40);
     if (comparacion == 0) {
         printf("Las cadenas son iguales.\n");
     } else if (comparacion < 0) {
@@ -45,9 +72,9 @@ int main() {
     int edad = 25;
     float altura = 1.75;
     char nombre[] = "Juan";
-
+    char *caracter_con = cadena_repetida('-', 30);
     sprintf(buffer, "Nombre: %s, Edad: %d, Altura: %.2f", nombre, edad, altura);
-    printf("Cadena formateada: %s\n", buffer);
+    printf("Cadena formateada: \n%s%s\n", caracter_con, buffer);
 
     return 0;
 }
